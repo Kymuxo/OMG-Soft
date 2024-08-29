@@ -1,0 +1,37 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: copypixel.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+
+Texture2D shaderTexture;
+Texture2D sourceTexture;
+Texture2D alphaTexture;
+SamplerState SampleType;
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	float4 textureColor;
+    // Sample the pixel color from the texture using the sampler at this texture coordinate location.
+    textureColor = shaderTexture.Sample(SampleType, input.tex);
+
+	float4 sourceColor = sourceTexture.Sample(SampleType, input.tex);
+	float4 alphaColor = alphaTexture.Sample(SampleType, input.tex);
+
+
+	return sourceColor * alphaColor.a + textureColor * (1.0 - alphaColor.a);
+}

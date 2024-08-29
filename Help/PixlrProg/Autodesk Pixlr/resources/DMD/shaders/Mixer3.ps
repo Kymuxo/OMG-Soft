@@ -1,0 +1,69 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: Texture.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+
+cbuffer TextureBuffer
+{
+	float scale_width;
+	float scale_height;
+	float threshold;
+	float intensity;
+	float3 color;
+	float padding;
+	float4 Global_tileRegion;
+};
+
+
+Texture2D Texture1;
+Texture2D Texture2;
+SamplerState SampleType;
+
+float2 tile2World(float2 tpos)
+{
+	float2 pos = Global_tileRegion.xy + tpos.xy * Global_tileRegion.zw;
+	return pos;
+}
+
+float2 world2tile(float2 wpos)
+{
+	float2 pos = (wpos - Global_tileRegion.xy) / (Global_tileRegion.zw);
+	return pos;
+}
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	float4 inColor = Texture1.Sample(SampleType, input.tex);
+	if(inColor.a != 0.0)
+	{ 
+		inColor.rgb /= inColor.a;
+	}
+	float2 hc = tile2World(input.tex) * float2(scale_width, scale_height);
+	float3 tone = Texture2.Sample(SampleType, hc).xxx; 
+
+	float val = length(inColor.rgb); 
+	float3 outCol = float3(1.0, 1.0, 1.0);   
+	if((intensity * tone.x + val) < threshold)
+	{ 
+		outCol = color; 
+	} 
+	
+	outCol.rgb *= inColor.a;
+
+	return float4(outCol, inColor.a);
+}

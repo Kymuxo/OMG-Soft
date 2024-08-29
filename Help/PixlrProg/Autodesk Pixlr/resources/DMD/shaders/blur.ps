@@ -1,0 +1,59 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: blur.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+cbuffer TextureBuffer
+{
+	float2 delta;
+	float2 padding;
+};
+
+
+Texture2D shaderTexture;
+SamplerState SampleType;
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+	float4 col : COLOR0;
+    float2 tex : TEXCOORD0;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+
+float random(PixelInputType input, float3 scale, float seed){
+	return frac(sin(dot(input.col.xyz + seed, scale)) * 43758.5453 + seed);
+}
+
+float4 getBlurColor(PixelInputType input){
+	float4 color = float4(0.0, 0.0, 0.0, 0.0);
+	float total = 0.0;
+	
+	float offset = random(input, float3(12.9898, 78.233, 151.7182), 0.0);
+	
+	for (float t = -20.0; t <= 20.0; t++) {
+		float percent = (t + offset - 0.5) / 20.0;
+		float weight = 1.0 - abs(percent);
+		float4 sample = shaderTexture.Sample(SampleType, input.tex + delta * percent);
+		color += sample * weight;
+		total += weight;
+	}
+	
+	color = color / total;
+	
+	return color;
+}
+
+
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	return  getBlurColor(input);
+}

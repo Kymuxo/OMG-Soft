@@ -1,0 +1,348 @@
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\WebApplication1.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.AccessControl.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Claims.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\WebGrease.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\ru\System.Web.Helpers.resources.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\ru\System.Web.Mvc.resources.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\ru\System.Web.Optimization.resources.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\ru\System.Web.Razor.resources.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.resources.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.Deployment.resources.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.Razor.resources.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\EntityFramework.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\EntityFramework.xml
+D:\Учеба\4 сем\курсовой\web\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+E:\курсовой\web\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+E:\курсовой\web\WebApplication1\WebApplication1\bin\WebApplication1.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.AccessControl.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Claims.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Principal.Windows.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+E:\курсовой\web\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+E:\курсовой\web\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\EntityFramework.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\WebGrease.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\EntityFramework.xml
+E:\курсовой\web\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+E:\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+E:\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+E:\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+E:\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+E:\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+E:\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+E:\курсовой\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+E:\курсовой\web\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+E:\курсовой\web\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+E:\курсовой\web\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\курсовой\web\WebApplication1\WebApplication1\bin\ru\System.Web.Helpers.resources.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\ru\System.Web.Mvc.resources.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\ru\System.Web.Optimization.resources.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\ru\System.Web.Razor.resources.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.resources.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.Deployment.resources.dll
+E:\курсовой\web\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.Razor.resources.dll
+E:\курсовой\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+E:\курсовой\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+E:\курсовой\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+E:\курсовой\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+E:\курсовой\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\WebApplication1.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.AccessControl.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Claims.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Principal.Windows.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\EntityFramework.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\WebGrease.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\EntityFramework.xml
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\ru\System.Web.Helpers.resources.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\ru\System.Web.Mvc.resources.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\ru\System.Web.Optimization.resources.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\ru\System.Web.Razor.resources.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.resources.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.Deployment.resources.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.Razor.resources.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+E:\OMG-Soft\IT-Environment\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\WebApplication1.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\csc.exe
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\csc.exe.config
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\csc.rsp
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\csi.exe
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\csi.exe.config
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\csi.rsp
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.Managed.Core.targets
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.AppContext.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Collections.Immutable.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Console.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.Compression.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.IO.Pipes.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Reflection.Metadata.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.AccessControl.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Claims.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Security.Principal.Windows.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.ValueTuple.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XmlDocument.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\vbc.exe
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\vbc.exe.config
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\vbc.rsp
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\roslyn\VBCSCompiler.exe.config
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\EntityFramework.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\WebGrease.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\EntityFramework.xml
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\ru\System.Web.Helpers.resources.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\ru\System.Web.Mvc.resources.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\ru\System.Web.Optimization.resources.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\ru\System.Web.Razor.resources.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.resources.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.Deployment.resources.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\bin\ru\System.Web.WebPages.Razor.resources.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojAssemblyReference.cache
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+E:\CourseProject\IT-Environment\web\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb

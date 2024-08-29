@@ -1,0 +1,58 @@
+﻿@model IEnumerable<WebApplication1.Models.Workers>
+
+@{
+    ViewBag.Title = "All";
+}
+
+<h2>НАШИ РАБОТНИКИ</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Имя работника
+            @*@Html.DisplayNameFor(model => model.Name)*@
+        </th>
+        <th>
+            Фамилия работника
+            @*@Html.DisplayNameFor(model => model.Surname)*@
+        </th>
+        @*<th>
+
+            @Html.DisplayNameFor(model => model.Password)
+        </th>*@
+        <th>
+            Рабочий стаж
+            @*@Html.DisplayNameFor(model => model.WorkYeats)*@
+        </th>
+        <th>
+            Контакты
+            @*@Html.DisplayNameFor(model => model.Contacts)*@
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Surname)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.Password)
+        </td>*@
+        <td>
+            @Html.DisplayFor(modelItem => item.WorkYeats)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Contacts)
+        </td>
+        @*<td>
+            @Html.CheckBox("i")
+        </td>*@
+    </tr>
+}
+
+</table>

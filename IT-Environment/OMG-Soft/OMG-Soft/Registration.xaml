@@ -1,0 +1,64 @@
+﻿<Window x:Class="OMG_Soft.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:OMG_Soft"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="700" Width="400" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Background="Transparent" Icon="Resources/Pictures/Emblem/Icon.ico">
+    
+    <Grid Loaded="Grid_Loaded">
+        
+        <Border Background="#FF201E1E"/>
+        
+        <Grid VerticalAlignment="Top" Height="45" Width="Auto" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+            <Label Content="OMG-Soft" HorizontalAlignment="Left" FontSize="24" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" Margin="8,5,0,1" Width="392"/>
+        </Grid>
+
+        <Label Content="{DynamicResource m_btRegestration}" Height="47" FontSize="33" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" Margin="100,0,100,608" VerticalAlignment="Bottom"/>
+        
+        <Grid Height="48" Margin="44,194,44,0" VerticalAlignment="Top" >
+            <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+            <materialDesign:PackIcon Kind="Done" Width="36" Height="38" Foreground="{Binding BorderBrush, ElementName=tbSurname}" Margin="3,10,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbSurname" materialDesign:HintAssist.Hint="{DynamicResource m_tbSurname}"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="43,-8,7,3" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+        </Grid>
+        
+        <Grid Height="48" Margin="44,247,44,0" VerticalAlignment="Top">
+            <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+            <materialDesign:PackIcon Kind="Done" Width="36" Height="38" Foreground="{Binding BorderBrush, ElementName=tbName}" Margin="3,8,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbName" materialDesign:HintAssist.Hint="{DynamicResource m_tbName}"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="43,-8,7,3" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+        </Grid>
+        
+        <Grid Height="48" Margin="44,300,44,0" VerticalAlignment="Top">
+            <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+            <materialDesign:PackIcon Kind="User" Width="36" Height="38" Foreground="{Binding BorderBrush, ElementName=tbUserLogin}" Margin="3,8,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbUserLogin" materialDesign:HintAssist.Hint="{DynamicResource m_tbLogin}"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="43,-8,7,3" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+        </Grid>
+        
+        <Grid Height="48" Margin="44,353,44,0" VerticalAlignment="Top">
+            <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+            <materialDesign:PackIcon Kind="LockCheck" Width="36" Height="36" Foreground="{Binding BorderBrush, ElementName=tbUserPassword}" Margin="3,7,0,0" VerticalAlignment="Top"/>
+            <PasswordBox x:Name="tbUserPassword" materialDesign:HintAssist.Hint="{DynamicResource m_tbPassword}"  Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="43,-8,7,3" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+        </Grid>
+        
+        <Grid Height="48" Margin="44,406,44,0" VerticalAlignment="Top">
+            <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+            <materialDesign:PackIcon Kind="Payment" Width="36" Height="38" Foreground="{Binding BorderBrush, ElementName=tbCard}" Margin="3,8,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbCard" materialDesign:HintAssist.Hint="{DynamicResource m_tbCartNum}"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="43,-8,7,3" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+        </Grid>
+        
+        <Grid Height="106" Margin="44,458,44,0" VerticalAlignment="Top">
+            <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+            <materialDesign:PackIcon Kind="ContactPhone" Width="30" Height="38" Foreground="{Binding BorderBrush, ElementName=tbUserMail}" Margin="6,14,0,0" VerticalAlignment="Top"/>
+            <TextBox x:Name="tbUserMail" ToolTip="{DynamicResource m_ToolTip_UserMail}" materialDesign:HintAssist.Hint="{DynamicResource m_tbUserMail}" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="43,-3,7,3" TextWrapping="Wrap" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+        </Grid>
+        
+        <Image Height="100" Margin="150,90,150,0" VerticalAlignment="Top" gif:ImageBehavior.AnimatedSource="Resources/Pictures/Application/LE57.gif"/>
+
+        <Button Name="btSubmit" Click="btSubmit_Click" Content="{DynamicResource m_btSignUp}" Style="{StaticResource BaseButton}" FontSize="17" Margin="100,591,100,0" VerticalAlignment="Top" Height="38"/>
+
+        <Button Name="btCancel" Click="BtCancel_Click" Content="{DynamicResource m_btBack}" Style="{StaticResource BaseButton}" FontSize="17" Margin="150,645,150,0" VerticalAlignment="Top" Height="30"/>
+    
+    </Grid>
+</Window>

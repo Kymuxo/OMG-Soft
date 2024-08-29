@@ -1,0 +1,311 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:OMG_Soft.Resources.Dictionaries"
+                    xmlns:v="clr-namespace:System;assembly=mscorlib">
+
+    <!--Laba7_8-->
+    <v:String x:Key="Category">Категория</v:String>
+    <v:String x:Key="Priority">Приоритет</v:String>
+    <v:String x:Key="Status">Статус</v:String>
+    <v:String x:Key="Language">Английский</v:String>
+    <v:String x:Key="Style">Стиль</v:String>
+    <v:String x:Key="Add">Добавить</v:String>
+    <v:String x:Key="Add2">Добавить задачу</v:String>
+    <v:String x:Key="Delete">Удалить</v:String>
+    <v:String x:Key="Edit">Изменить</v:String>
+    <v:String x:Key="Title">Название</v:String>
+    <v:String x:Key="Date">Дата</v:String>
+    <v:String x:Key="More">Больше</v:String>
+
+    <v:String x:Key="Important">Важно</v:String>
+    <v:String x:Key="Normal">Нормально</v:String>
+    <v:String x:Key="Low">И так сойдёт</v:String>
+    <v:String x:Key="Complete">Выполнено</v:String>
+    <v:String x:Key="InProcess">В процессе</v:String>
+
+    <v:String x:Key="Accept">Подтвердить</v:String>
+    <v:String x:Key="Cancel">Отмена</v:String>
+
+    <!--TODOLIST-->
+    <v:String x:Key="m_btTodoList">Список дел</v:String>
+    <v:String x:Key="m_headerDate">Дата/время</v:String>
+    <v:String x:Key="m_headerState">Статус</v:String>
+    <v:String x:Key="m_headerTask">Задача</v:String>
+    <!--ТОП-->
+    <v:String x:Key="m_btServices">Услуги</v:String>
+    <v:String x:Key="m_btProducts">Товары</v:String>
+    <v:String x:Key="m_btInMenu">В меню</v:String>
+    <v:String x:Key="m_lbMainTheMost">Самые популярные товары и услуги</v:String>
+
+    <!--Помощь-->
+    <!--ТОП <v:String x:Key="m_btInMenu">В меню</v:String>-->
+
+    <!--Настройки профиля-->
+    <v:String x:Key="m_tbSurname">Фамилия</v:String>
+    <v:String x:Key="m_tbName">Имя</v:String>
+    <v:String x:Key="m_tbLogin">Логин</v:String>
+    <v:String x:Key="m_tbPassword">Пароль</v:String>
+    <v:String x:Key="m_tbCartNum">Номер карты</v:String>
+    <v:String x:Key="m_tbUserMail">Контакты</v:String>
+    <v:String x:Key="m_ToolTip_UserMail">Почта, номер телефона и т.д.</v:String>
+    <v:String x:Key="m_lbDataSettings">Настройка данных</v:String>
+    <v:String x:Key="m_btChangePhoto">Изменить фото</v:String>
+    <v:String x:Key="m_btDeleteUser">Удалить профиль</v:String>
+    <v:String x:Key="m_btSaveChanges">Сохранить настройки</v:String>
+    <v:String x:Key="m_btInCabinet">В кабинет</v:String>
+    <v:String x:Key="m_lbThemeSettings">Настройка темы</v:String>
+    <v:String x:Key="m_lbLight">Светлая</v:String>
+    <v:String x:Key="m_lbDark">Темная</v:String>
+
+    <!--Корзина пользователя-->
+    <!--ТОП <v:String x:Key="m_btServices">Услуги</v:String>-->
+    <!--ТОП <v:String x:Key="m_btProducts">Товары</v:String>-->
+    <v:String x:Key="m_lbYourOrder">Ваш заказ</v:String>
+    <v:String x:Key="m_lbChooseWorker">Выберите работника</v:String>
+    <v:String x:Key="m_lbChooseDate">Укажите дату</v:String>
+    <v:String x:Key="m_lbAdress">Адрес доставки</v:String>
+    <!--Настройки профиля <v:String x:Key="m_btInCabinet">В кабинет</v:String>-->
+    <v:String x:Key="m_btEnter">Подтвердить</v:String>
+
+    <!--О нас-->
+    <!--ТОП <v:String x:Key="m_btInMenu">В меню</v:String>-->
+    <v:String x:Key="m_TextAboutUs">В данном приложении Вы сможете заказать любые услуги, связанные с IT-сферой, так 
+             же Вы сможете заказать различные оборудования и компоненты, чтобы улучшить или отремонтировать свой
+              ПК, Вы так же сможете выбрать мастера, который не только привезет Ваш заказ, но и выполнит всю 
+             оговоренную работу быстро и качественно. Информация о наших работниках находится во вкладке 'Работники' 
+             в меню приложения. Просмотреть товары и их стоимость можно во вкладке 'Список товаров'. Просмотреть 
+             услуги, которые мы можем предоставить, Вы сможете во вкладке 'Список услуг'. Если Вы не нашли нужную  
+             Вам услугу, Вы можете обратиться за помощью к нашему консультанту, записаться к нему можно перейдя 
+             по ссылке на главной странице. Чтобы быстро проверить имеется ли у нас нужный Вам товар или услуга, 
+             введите его название в строку поиска на главной странице. Так же Вы можете просмотреть ТОП-5 наиболее 
+             популярных услуг, нажав на соответствующую кнопку на главной странице. В 'Личном кабинете' находится 
+             информация о Вашем профиле, указанная при регистрации. Вы можете изменить свои данные перейдя во 
+             вкладку 'Настройки', там же вы сможете изменить тему приложения и удалить свой профиль. Из 'Личного 
+             кабинета' Вы можете перейти в корзину, где сможете оформить свой заказ.Если Вы впервые осуществляете 
+             заказ, наша компания предоставляет скидку 20 %. При последующих заказах, скидка зависит от общей суммы 
+             заказа: чем выше цена, тем больше скидка(от 5 до 20 %). Во вкладке 'Помощь' Вы можете найти вопросы, 
+             задаваемые другими пользователями, и ответы на них. Так же на главной странице Вы можете найти 
+             контактные данные администратора. Мы заботимся о наших клиентах, всегда готовы помочь и ответить на любые Ваши вопросы!</v:String>
+
+    <!--Консультация-->
+    <v:String x:Key="m_lbMainConsult">Запись на консультацию</v:String>
+    <v:String x:Key="m_lbChooseDateOfConsult">Выберите дату</v:String>
+    <v:String x:Key="m_lbChooseOffice">Выберите офис</v:String>
+    <v:String x:Key="m_lbLeaveYourPhoneNum">Оставьте номер телефона</v:String>
+    <!--ТОП <v:String x:Key="m_btInMenu">В меню</v:String>-->
+    <v:String x:Key="m_btSend">Отправить</v:String>
+    <v:String x:Key="m_tbConsultText">
+        Укажите день, в который Вы бы хотели прийти на консультацию, выберите наиболее подходящий для Вас офис, оставьте свой номер телефона и нажмите на кнопку 'Отправить', чтобы подать заявку. Наш консультант свяжется с Вами вближайшее время.
+    </v:String>
+
+    <!--Кабинет пользователя-->
+    <!--ТОП <v:String x:Key="m_btInMenu">В меню</v:String>-->
+    <v:String x:Key="m_btMyBasket">Моя корзина</v:String>
+    <v:String x:Key="m_btSettings">Настройки</v:String>
+    <v:String x:Key="m_btExit">Выход</v:String>
+    <v:String x:Key="m_lbMainCab">Мой профиль</v:String>
+    <v:String x:Key="m_lbCabSurname">Фамилия:</v:String>
+    <v:String x:Key="m_lbCabName">Имя:</v:String>
+    <v:String x:Key="m_lbCabLogin">Логин:</v:String>
+    <v:String x:Key="m_lbCabCartNum">Номер карты:</v:String>
+    <v:String x:Key="m_lbCabUserMail">Контакты:</v:String>
+
+    <!--Меню-->
+    <v:String x:Key="m_btCabinet">Личный кабинет</v:String>
+    <v:String x:Key="m_btHome">Главная</v:String>
+    <v:String x:Key="m_listOfServices">Список услуг</v:String>
+    <v:String x:Key="m_listOfProducts">Список товаров</v:String>
+    <v:String x:Key="m_listOfWorkers">Работники</v:String>
+    <v:String x:Key="m_listOfOffices">Офисы</v:String>
+    <!--Кабинет пользователя <v:String x:Key="m_btExit">Выход</v:String>-->
+    <v:String x:Key="m_tbSearch">Поиск</v:String>
+    <v:String x:Key="m_btSearch">Найти</v:String>
+    <v:String x:Key="m_btInfoAboutUs">О нас</v:String>
+    <v:String x:Key="m_btConsultation">Запись на консультацию</v:String>
+    <v:String x:Key="m_btTOP">ТОП-5</v:String>
+    <v:String x:Key="m_btAdmins">Администраторы</v:String>
+    <v:String x:Key="m_btHelp">Помощь</v:String>
+    <v:String x:Key="m_lbHello">Добро пожаловать! Вас приветствует компания OMG-Soft!</v:String>
+
+
+    <!--Вход-->
+    <v:String x:Key="m_btRegestration">Регистрация</v:String>
+    <v:String x:Key="m_btSubmit">Вход</v:String>
+    <!--Настройки профиля <v:String x:Key="m_tbLogin">Логин</v:String>-->
+    <!--Настройки профиля <v:String x:Key="m_tbPassword">Пароль</v:String>-->
+
+    <!--Регистрация-->
+    <!--Вход <v:String x:Key="m_btRegestration">Регистрация</v:String>-->
+    <!--Настройки профиля <v:String x:Key="m_tbSurname">Фамилия</v:String>-->
+    <!--Настройки профиля <v:String x:Key="m_tbName">Имя</v:String>-->
+    <!--Настройки профиля <v:String x:Key="m_tbLogin">Логин</v:String>-->
+    <!--Настройки профиля <v:String x:Key="m_tbPassword">Пароль</v:String>-->
+    <!--Настройки профиля <v:String x:Key="m_tbCartNum">Номер карты</v:String>-->
+    <!--Настройки профиля <v:String x:Key="m_tbUserMail">Контакты</v:String>-->
+    <!--Настройки профиля <v:String x:Key="m_ToolTip_UserMail">Почта, номер телефона и т.д.</v:String>-->
+    <v:String x:Key="m_btSignUp">Зарегистрироваться</v:String>
+    <v:String x:Key="m_btBack">Назад</v:String>
+<!--LABA7_8-->
+    <ControlTemplate x:Key="CircButton1">
+        <Border CornerRadius="50"  Width="70" Height="30" BorderBrush="Plum" BorderThickness="3">
+            <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" Content="undo" Background="Plum"></ContentControl>
+        </Border>
+    </ControlTemplate>
+    <ControlTemplate x:Key="CircButton2">
+        <Border CornerRadius="50"  Width="70" Height="30" BorderBrush="Plum" BorderThickness="3">
+            <ContentControl HorizontalAlignment="Center" VerticalAlignment="Center" Content="redo" Background="Plum"></ContentControl>
+        </Border>
+    </ControlTemplate>
+    <Style TargetType="Button">
+        <Setter Property="Background" Value="Pink" />
+        <Setter Property="Opacity" Value="0.4" />
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="MouseEnter">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimation Duration="0:0:1" Storyboard.TargetProperty="Opacity" To="1"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="MouseLeave">
+                <BeginStoryboard>
+                    <Storyboard>
+                        <DoubleAnimation Duration="0:0:1" Storyboard.TargetProperty="Opacity" To="0.4"/>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+
+            <!--MultiTrigger-->
+            <MultiTrigger>
+                <MultiTrigger.Conditions>
+                    <Condition Property="IsMouseOver" Value="True" />
+                    <Condition Property="IsPressed" Value="True" />
+                </MultiTrigger.Conditions>
+                <MultiTrigger.Setters>
+                    <Setter Property="FontSize" Value="14" />
+                    <Setter Property="Foreground" Value="Red" />
+                </MultiTrigger.Setters>
+            </MultiTrigger>
+
+        </Style.Triggers>
+    </Style>
+
+    <ControlTemplate x:Key="MyTextBoxTemplateWithoutBorder" TargetType="{x:Type TextBoxBase}">
+        <Border x:Name="border" BorderBrush="{x:Null}" BorderThickness="0" Background="{TemplateBinding Background}" SnapsToDevicePixels="True">
+            <ScrollViewer x:Name="PART_ContentHost" Focusable="False" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
+        </Border>
+        <ControlTemplate.Triggers>
+            <Trigger Property="IsEnabled" Value="False">
+                <Setter Property="Opacity" TargetName="border" Value="0.56"/>
+            </Trigger>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="BorderBrush" TargetName="border" Value="#FF7EB4EA"/>
+            </Trigger>
+            <Trigger Property="IsKeyboardFocused" Value="True">
+                <Setter Property="BorderBrush" TargetName="border" Value="#FF569DE5"/>
+            </Trigger>
+        </ControlTemplate.Triggers>
+    </ControlTemplate>
+    <Style TargetType="TextBox">
+        <Style.Triggers>
+            <DataTrigger Binding="{Binding ElementName=Tasks, Path = IsMouseOver}" Value="True">
+                <Setter Property="TextAlignment" Value="Center"/>
+            </DataTrigger>
+        </Style.Triggers>
+        <Setter Property="Background" Value="Thistle" />
+    </Style>
+ <!--LABA7_8-->
+    <Style x:Key="MainGridBackground" TargetType="Grid">
+        <Setter Property="Background" Value="#FFE1E5EB"></Setter>
+    </Style>
+    <Style x:Key="HeadGridBackground" TargetType="Grid">
+        <Setter Property="Background" Value="#FF6F4EE1"></Setter>
+    </Style>
+    <Style x:Key="HeadLableStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="22"></Setter>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
+        <Setter Property="Foreground" Value="#FFF4F6F8"></Setter>
+        <Setter Property="FontFamily" Value="Times New Roman"></Setter>
+    </Style>
+    <Style x:Key="StackMenuBackground" TargetType="StackPanel">
+        <Setter Property="Background" Value="#FF7295DF"></Setter>
+    </Style>
+    <Style x:Key="GridMenuBackground" TargetType="Grid">
+        <Setter Property="Background" Value="#FF201E1E"></Setter>
+    </Style>
+    <Style x:Key="MainLableStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="22"></Setter>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
+        <Setter Property="Foreground" Value="#FF164CBF"></Setter>
+        <Setter Property="FontFamily" Value="Times New Roman"></Setter>
+    </Style>
+    <Style x:Key="IconColorStyle" TargetType="Label">
+        <Setter Property="Foreground" Value="#FF164CBF"></Setter>
+    </Style>
+    <Style x:Key="Main2LableStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="18"></Setter>
+        <Setter Property="FontWeight" Value="Bold"></Setter>
+        <Setter Property="Foreground" Value="#FF164CBF"></Setter>
+        <Setter Property="FontFamily" Value="Times New Roman"></Setter>
+    </Style>
+    <Style x:Key="InfoLableStyle" TargetType="Label">
+        <Setter Property="FontSize" Value="16"></Setter>
+        <Setter Property="Foreground" Value="#FF6F4EE1"></Setter>
+        <Setter Property="FontFamily" Value="Palatino Linotype"></Setter>
+    </Style>
+    <Style x:Key="InfoTextBlockStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="16"></Setter>
+        <Setter Property="Foreground" Value="#FF6F4EE1"></Setter>
+        <Setter Property="FontFamily" Value="Palatino Linotype"></Setter>
+    </Style>
+    <Style x:Key="InfoTextBoxStyle" TargetType="TextBox">
+        <Setter Property="FontSize" Value="18"></Setter>
+        <Setter Property="Foreground" Value="#FF164CBF"></Setter>
+        <Setter Property="FontFamily" Value="Palatino Linotype"></Setter>
+    </Style>
+    
+    <Style TargetType="{x:Type Button}" x:Key="BaseButton">
+        <Setter Property="Foreground" Value="#FFF4F6F8"/>
+        <Setter Property="FontFamily" Value="Times New Roman"/>
+        <Setter Property="FontWeight" Value="Bold"/>
+
+
+        <Setter Property="Background" Value="#FF6F4EE1"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type Button}">
+                    <Border Background="{TemplateBinding Background}" CornerRadius="13" BorderThickness="0.5" BorderBrush="#FFB56DDF">
+                        <ContentPresenter  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                    </Border>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <Trigger Property="IsMouseOver" Value="True">
+                <Setter Property="Background" Value="#FFFFD600"/>
+                <Setter Property="Foreground" Value="#FF164CBF"/>
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>
+
+    <Style x:Key="TOPTextBlockStyle" TargetType="TextBlock">
+        <Setter Property="FontSize" Value="16"></Setter>
+        <Setter Property="Foreground" Value="#FF164CBF"></Setter>
+        <Setter Property="FontFamily" Value="Times New Roman"></Setter>
+    </Style>
+
+    <Style x:Key="HelpListBoxStyle" TargetType="ListBox">
+        <Setter Property="FontSize" Value="18"></Setter>
+        <Setter Property="Foreground" Value="#FF164CBF"></Setter>
+        <Setter Property="FontFamily" Value="Palatino Linotype"></Setter>
+    </Style>
+
+    <Style x:Key="DateComboStyle" TargetType="Label">
+        <Setter Property="Foreground" Value="#FF164CBF"></Setter>
+        <Setter Property="Background" Value="#FFB56DDF"></Setter>
+        <Setter Property="BorderBrush" Value="#FF164CBF"></Setter>
+    </Style>
+    
+</ResourceDictionary>

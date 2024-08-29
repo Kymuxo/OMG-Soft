@@ -1,0 +1,56 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: waterdown.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+cbuffer TextureBuffer
+{
+	float uAmount;
+	float3 padding;
+};
+
+
+Texture2D shaderTexture;
+SamplerState SampleType;
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	float4 textureColor;
+    // Sample the pixel color from the texture using the sampler at this texture coordinate location.
+    textureColor = shaderTexture.Sample(SampleType, input.tex);
+	
+	float r = textureColor.r * 255.0;
+	float g = textureColor.g * 255.0;
+	float b = textureColor.b * 255.0;
+	
+	r = (r*0.393) + (g*0.769) + (b*0.189);
+	g = (r*0.349) + (g*0.686) + (b*0.168);
+	b = (r*0.272) + (g*0.534) + (b*0.131);
+				
+	if(r > 255.0) r = 255.0;
+	else if(r < 0.0) r = 0.0;
+	if(g > 255.0) g = 255.0;
+	else if(g < 0.0) g = 0.0;
+	if(b > 255.0) b = 255.0;
+	else if(b < 0.0) b = 0.0;
+	
+
+	return lerp(
+		textureColor,
+		float4(r/255.0, g/255.0, b/255.0, textureColor.a),
+		uAmount);
+}

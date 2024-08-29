@@ -1,0 +1,73 @@
+﻿<Window x:Class="OMG_Soft.WorkersCabinet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OMG_Soft"
+        mc:Ignorable="d" Height="750" Width="1200" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Icon="Resources/Pictures/Emblem/Icon.ico">
+
+    <Grid Background="#FF201E1E" Loaded="Grid_Loaded">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1200"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Height="35" Width="1200" MouseLeftButtonDown="Grid_MouseLeftButtonDown"  Background="#FF201E1E">
+            <Label Content="OMG-Soft" HorizontalAlignment="Left" FontSize="22" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" Margin="5,0,0,1" Width="1200"/>
+        </Grid>
+
+        <Grid Grid.Column="0" Grid.Row="1">
+
+            <DatePicker Name="monthCalendar" SelectedDateChanged="MonthCalendar_SelectedDateChanged" FontFamily="Palatino Linotype" FontSize="18" BorderThickness="1" Margin="477,245,504,434.2" Foreground="#FF02A6F2" Height="36" Background="#FF151414" BorderBrush="#FF02A6F2"/>
+            <Label Content="Укажите дату" FontSize="22" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="514,187,0,0" VerticalAlignment="Top"/>
+
+            <Image HorizontalAlignment="Left" Height="162" Margin="22,25,0,0" VerticalAlignment="Top" Width="351" Source="Resources/Pictures/Emblem/Name.png" Stretch="Fill"/>
+
+            <Button Name="btMoreInfo" Click="BtMoreInfo_Click" Content="Подробнее" Style="{StaticResource BaseButton}" FontSize="17" Margin="532,343,561,0" VerticalAlignment="Top" Height="35"/>
+
+            <Label Content="Информация о заказе" FontSize="22" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="76,187,0,0" VerticalAlignment="Top"/>
+
+            <Label Content="Заказчик:" FontSize="18" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="44,261,0,0" VerticalAlignment="Top"/>
+            <Label Content="Дата:" FontSize="18" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="44,337,0,0" VerticalAlignment="Top"/>
+            <Label Content="Адрес:" FontSize="18" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="44,429,0,0" VerticalAlignment="Top"/>
+
+            <Label Name="lbCustomerLogin" Content="Информация о заказе" FontSize="16" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Margin="181,261,0,0" VerticalAlignment="Top" />
+            <Label Name="lbOrderDate" Content="Информация о заказе" FontSize="16" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Margin="181,337,0,0" VerticalAlignment="Top" />
+            <Label Name="lbOrderAdres" Content="Информация о заказе" FontSize="16" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Margin="181,428,0,0" VerticalAlignment="Top" />
+
+            <Label Content="Стоимость заказа:" FontSize="18" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="44,637,0,0" VerticalAlignment="Top"/>
+            <Label Name="lbOrderCost" Content="Информация о заказе" FontSize="16" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Margin="242,637,0,0" VerticalAlignment="Top" />
+
+            <Grid Name="pInfo"  HorizontalAlignment="Left" Height="623" Margin="751,64,0,0" VerticalAlignment="Top" Width="439">
+
+                <Label Content="Профиль заказчика" FontSize="22" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" Margin="116,10,116,0" VerticalAlignment="Top"/>
+
+                <Image Height="224" Margin="106,148,144,0" VerticalAlignment="Top" Source="Resources/Pictures/Users/tg2HRSWEHfM.jpg" Stretch="Fill"/>
+
+                <Label Content="Фамилия:" FontSize="18" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="60,50,0,0" VerticalAlignment="Top"/>
+                <Label Content="Имя:" FontSize="18" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="60,84,0,0" VerticalAlignment="Top"/>
+                <Label Content="Контакты:" FontSize="18" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="60,423,0,0" VerticalAlignment="Top"/>
+
+                <Label x:Name="lbCabSurname" Content="Иванов" FontSize="16" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Margin="169,49,0,0" VerticalAlignment="Top" />
+                <Label x:Name="lbCabName" Content="Иван" FontSize="16" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Margin="169,84,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="lbCabUserMail" Text="Телефоны, почты, адреса и т.д." FontSize="16" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Margin="60,471,0,-106" VerticalAlignment="Top" IsReadOnly="True" TextWrapping="Wrap" Width="266" Height="258"/>
+
+                <Separator HorizontalAlignment="Left" Height="15" Margin="60,113,0,0" VerticalAlignment="Top" Width="266"/>
+                <Separator HorizontalAlignment="Left" Height="15" Margin="57,403,0,0" VerticalAlignment="Top" Width="266"/>
+
+            </Grid>
+
+            <Label Content="Добро пожаловать в личный кабинет!" FontSize="22" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="391,25,0,0" VerticalAlignment="Top"/>
+
+            <Button Name="Exit" Click="Exit_Click" Content="Выход" Style="{StaticResource BaseButton}" FontSize="17" Margin="544,389,572,0" VerticalAlignment="Top" Height="35"/>
+
+        </Grid>
+        <Button x:Name="btTOP_Copy" Click="BtTOP_Copy_Click" Content="{DynamicResource m_btTodoList}" Style="{DynamicResource BaseButton}" HorizontalAlignment="Left" Margin="532,507.8,0,0" FontSize="18" VerticalAlignment="Top" Width="111" Height="35" Grid.Row="1"/>
+
+    </Grid>
+</Window>

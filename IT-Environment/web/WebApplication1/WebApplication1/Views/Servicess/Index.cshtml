@@ -1,0 +1,15 @@
+﻿@model WebApplication1.Models.Servicess
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Список сервисов</h2>
+<h3>@Model.ServiceName</h3>
+<dl class="dl-horizontal">
+    <dt>Название сервиса</dt>
+    <dd>@Model.ServiceName</dd>
+    <dt>Специализация</dt>
+    <dd>@Model.ServiceSpeciality</dd>
+    <dt>Цена за сервис</dt>
+    <dd>@Model.ServicePrice</dd>
+</dl>

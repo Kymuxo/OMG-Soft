@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<PROD_DEP_USER_IND version="8.2.1.0">
+    <Mode value="" />
+    <RealTimeApp value="MotionBuilder.exe" />
+    <RealTimeAppSupport value="true" />
+</PROD_DEP_USER_IND>

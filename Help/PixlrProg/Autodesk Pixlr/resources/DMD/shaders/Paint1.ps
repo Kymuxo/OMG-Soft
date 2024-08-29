@@ -1,0 +1,91 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: Texture.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+cbuffer TextureBuffer
+{
+	float4 Global_tileRegion;
+	float2 Global_tileSize;
+	float threshold;
+	float tile_size;
+	float aspectRatio;
+	float3 padding;
+};
+
+
+Texture2D Original;
+Texture2D WorkingCopy;
+SamplerState SampleType;
+
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+
+float rand(float2 n)
+{ 
+	return frac((n.x * n.y) / 13.0); 
+} 
+
+float2 tile2World(float2 tpos)
+{
+	float2 pos = Global_tileRegion.xy + tpos.xy * Global_tileRegion.zw;
+	return pos;
+}
+
+float2 world2tile(float2 wpos)
+{
+	float2 pos = (wpos - Global_tileRegion.xy) / (Global_tileRegion.zw);
+	return pos;
+}
+
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	// HIGHP vec2 coord = gl_FragCoord.xy; 
+	float2 coord = tile2World(input.tex); 
+	float2 t1 = tile_size*floor(coord/tile_size); 
+	float2 t2 = t1 + float2(0.0, tile_size); 
+	float2 t3 = t1 + float2(tile_size, tile_size); 
+	float2 t4 = t1 + float2(tile_size, 0.0); 
+
+	float2 d = coord - t1; 
+
+	float3 c = WorkingCopy.Sample(SampleType, input.tex).xyz; 
+	float3 i = Original.Sample(SampleType, input.tex).xyz; 
+
+	float R = 0.707106*tile_size; 
+
+	bool h1 = d.x < d.y; 
+	bool h2 = d.y < (tile_size - d.x); 
+
+	float2 T1 = h1 ? t2 : t4; 
+	float2 T2 = h2 ? t1 : t3; 
+
+	float3 oc = c; 
+
+	if (distance(c, i) > threshold)
+	{ 
+		bool n1 = length(T1 - coord) < R; 
+		bool n2 = length(T2 - coord) < R; 
+		float2 t = coord; 
+		t = n1 && !n2 ? T1 : t; 
+		t = n2 && !n1 ? T2 : t; 
+		t = n1 && n2 ? (rand(T1) < rand(T2) ? T2 : T1) : t; 
+		t = world2tile(t);
+		oc = Original.Sample(SampleType, t).xyz;
+	} 
+	
+	return float4(oc, 1.0);
+}

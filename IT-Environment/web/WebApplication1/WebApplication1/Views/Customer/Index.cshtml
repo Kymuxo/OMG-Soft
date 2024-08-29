@@ -1,0 +1,37 @@
+﻿@model WebApplication1.Models.Customers
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+
+@*@Html.TextBox("Question", null, new { @class = "form-control" })*@
+@*< input class ="form-control" id ="Question" name ="Question" type ="text" value ="" />*@
+@*@Html.PasswordFor(m => m.Password)*@
+@*height: 30px;
+    width: 1000px*@
+@*@Html.EditorFor(m => m.InputLogin)*@
+@*@Html.EditorFor(m => m.InputPassword)*@
+<form method="get">
+    @Html.EditorFor(m => m.InputLogin)
+    @Html.EditorFor(m => m.InputPassword)
+    <input type="submit" value="Отправить" />
+</form>
+@*<form method="post">
+        <input type="hidden" value="@ViewBag.Login" name="Login" />
+        <table>
+            <tr>
+                <td><input type="text" name="Login" /></td>
+            </tr>
+            <tr>
+                <tb><input type="text" name="Password" /></tb>
+            </tr>
+            <tr>
+                <td>
+                    <input type="submit" value="Отправить" />
+                </td>
+            </tr>
+        </table>
+    </form>*@

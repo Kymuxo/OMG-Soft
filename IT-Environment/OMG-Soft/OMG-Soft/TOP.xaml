@@ -1,0 +1,58 @@
+﻿<Window x:Class="OMG_Soft.TOP"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OMG_Soft"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="500" Width="800" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Icon="Resources/Pictures/Emblem/Icon.ico">
+
+    <Grid Style="{DynamicResource MainGridBackground}" Loaded="Grid_Loaded">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid Grid.Column="0" Grid.Row="0" Width="800" MouseLeftButtonDown="Grid_MouseLeftButtonDown"  Style="{DynamicResource HeadGridBackground}" HorizontalAlignment="Left" Margin="0,0,0,460" Grid.RowSpan="2">
+            <Label Content="OMG-Soft" HorizontalAlignment="Left" Style="{DynamicResource HeadLableStyle}" Margin="5,0,0,1" Width="795"/>
+        </Grid>
+
+        <Grid Grid.Column="0" Grid.Row="1" Margin="0,0,0,0">
+
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/Pictures/Application/4.jpg"/>
+            </Grid.Background>
+            
+            <Label Name="IconColor" Margin="698,541,0,-0.2" Style="{DynamicResource IconColorStyle}"/>
+            
+            <ListBox Name="lbTOPs" FontSize="16" Foreground="#FF271DAA" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Height="385" Margin="493,33,0,0" VerticalAlignment="Top" Width="273" Background="#FF7CB1CC" BorderThickness="0.5" BorderBrush="#FFF4F6F8"/>
+
+            <Button Name="btTOPOfProducts" Click="TOPOfProducts_Click" Style="{DynamicResource BaseButton}" Margin="356,386,0,0" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Width="105" Height="25">
+                <StackPanel Width="103" Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="BoxVariant" Height="20" Width="20" Margin="7,2,0,0" Foreground="{Binding ElementName=IconColor, Path=Foreground}"/>
+                    <TextBlock Text="{DynamicResource m_btProducts}" VerticalAlignment="Center" Margin="5,7,0,0" Style="{DynamicResource TOPTextBlockStyle}" Height="26"/>
+                </StackPanel>
+            </Button>
+
+            <Button Name="btTOPOfServices" Click="TOPOfServices_Click" Style="{DynamicResource BaseButton}" Margin="45,386,0,0" HorizontalAlignment="Left" FontSize="18" VerticalAlignment="Top" Width="105" Height="25">
+                <StackPanel Width="103" Orientation="Horizontal">
+                    <materialDesign:PackIcon Kind="ClipboardListOutline" Height="20" Width="20" Margin="7,2,0,0" Foreground="{Binding ElementName=IconColor, Path=Foreground}"/>
+                    <TextBlock Text="{DynamicResource m_btServices}" VerticalAlignment="Center" Margin="5,7,0,0" Style="{DynamicResource TOPTextBlockStyle}" Height="26"/>
+                </StackPanel>
+            </Button>
+
+            <Button Name="btBack" Click="BtBack_Click" HorizontalAlignment="Left" Margin="217,155,0,0"  Background="Transparent" BorderBrush="Transparent" VerticalAlignment="Top" Width="70" Height="53">
+                <Label Content="{DynamicResource m_btInMenu}" Width="63" Margin="-15,5,0,0" FontFamily="Times New Roman" FontSize="14" Foreground="#FF1B29EC" FontWeight="Bold"/>
+            </Button>
+
+            <Label Content="{DynamicResource m_lbMainTheMost}" FontSize="22" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="63,33,0,0" VerticalAlignment="Top" Height="35" Width="386"/>
+
+        </Grid>
+
+    </Grid>
+</Window>

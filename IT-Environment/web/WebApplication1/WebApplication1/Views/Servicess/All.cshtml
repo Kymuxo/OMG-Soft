@@ -1,0 +1,44 @@
+﻿@model IEnumerable<WebApplication1.Models.Servicess>
+
+@{
+    ViewBag.Title = "All";
+}
+
+<h2>Предоставляемые сервисы</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Сервис
+            @*@Html.DisplayNameFor(model => model.ServiceName)*@
+        </th>
+        <th>
+            Цена
+            @*@Html.DisplayNameFor(model => model.ServicePrice)*@
+        </th>
+        <th>
+            Количество специалистов
+            @*@Html.DisplayNameFor(model => model.ServiceSpeciality)*@
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServiceName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServicePrice)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ServiceSpeciality)
+        </td>
+        @*<td>
+            @Html.CheckBox("i")
+        </td>*@
+    </tr>
+}
+
+</table>

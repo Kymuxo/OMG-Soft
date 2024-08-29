@@ -1,0 +1,123 @@
+       
+/*****************************************
+ * Global settings
+ ****************************************/
+
+* {
+	margin:0;
+	padding:0;
+}
+
+body {
+	background:#e1e1e1;
+	font-family:  Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color:#232323;
+}
+
+/*****************************************
+ * Container settings
+ ****************************************/ 
+ #adsk91-container {
+	background-color: #ffffff;
+    height: 100%;
+	min-height: 100%;
+	padding:0 0px 0 0px;
+	width: 665px;
+}
+#adsk91-container h2 {
+	color: #999999;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 17px;
+	margin-top: 8px;
+	margin-bottom: 16px;
+	margin-left: -1px;
+	padding-top:12px;
+}
+
+#adsk91-content {
+	border-collapse: collapse;
+	min-height:320px;
+	table-layout: fixed;
+	margin: 0px;
+	padding-bottom: 24px;
+	padding-left: 18px;
+	padding-right: 18px;
+}
+
+#adsk91-content p{
+	margin-top: 8px;
+	line-height: 130%;
+}
+
+/*Header
+-------------------------------------------*/
+#adsk91-header {
+	background:#000;
+	position:relative;
+	padding:3px 18px 3px;
+}
+
+/*Header for Offer Center and Campaign Landing Pages*/
+#adsk91-header-oc-landing {
+	background:#000;
+	position:relative;
+	height:74px;
+	padding:3px 18px 3px;
+}
+
+/*Title - Header 
+-------------------------------------------*/
+
+#adsk91-header #adsk91-logo {
+	padding-top:15px;
+	padding-bottom:24px;
+	margin-left:1px;
+}
+
+#adsk91-header-oc-landing #adsk91-logo-oc-landing {
+	padding-top:15px;
+	padding-bottom:0px;
+	margin-left:1px;
+}
+
+#adsk91-header #adsk91-logo a,
+#adsk91-header-oc-landing #adsk91-logo-oc-landing a,
+#adsk91-header #adsk91-logo #adsk91-home {
+	display:block;
+	width:132px;
+	height:24px;
+	background:url(http://images.autodesk.com/adsk/s912/images/logo.gif) no-repeat top left;
+	text-indent:-9999px;
+	text-decoration:none;
+}
+
+
+/* End hide from IE-mac */
+#adsk91-content {
+	line-height: 15px;
+	padding-top: 3px;
+	margin: 0;
+	padding-left: 18px;
+	vertical-align: top;
+}  
+
+#adsk91-title h1 {
+	background:#555555;
+	color:#fff;
+	font-weight:normal;
+	font-size:21px;
+	padding:8px 0 7px 18px;
+} 
+
+
+#adsk91-footer {
+	color:#959595;
+	padding:8px 12px 18px 18px;
+	font-size:11px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCCCCC;
+	margin: 0px;
+}  

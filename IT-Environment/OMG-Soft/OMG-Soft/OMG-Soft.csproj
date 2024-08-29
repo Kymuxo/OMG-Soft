@@ -1,0 +1,426 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{ADDEDC08-1F50-45B3-8392-C07C3C3089D7}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>OMG_Soft</RootNamespace>
+    <AssemblyName>OMG-Soft</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialDesignColors, Version=1.2.4.1361, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignColors.1.2.4\lib\net45\MaterialDesignColors.dll</HintPath>
+    </Reference>
+    <Reference Include="MaterialDesignThemes.Wpf, Version=3.1.1.1361, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\MaterialDesignThemes.3.1.1\lib\net45\MaterialDesignThemes.Wpf.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="WpfAnimatedGif, Version=2.0.0.0, Culture=neutral, PublicKeyToken=9e7cd3b544a090dc, processorArchitecture=MSIL">
+      <HintPath>..\packages\WpfAnimatedGif.2.0.0\lib\net40\WpfAnimatedGif.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AddTask.xaml.cs">
+      <DependentUpon>AddTask.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Classes\Command.cs" />
+    <Compile Include="Classes\DataBase.cs" />
+    <Compile Include="Classes\Task.cs" />
+    <Compile Include="Laba7_8.xaml.cs">
+      <DependentUpon>Laba7_8.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Models\TodoModel.cs" />
+    <Compile Include="Registration.xaml.cs">
+      <DependentUpon>Registration.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Services\FileIOService.cs" />
+    <Compile Include="TOP.xaml.cs">
+      <DependentUpon>TOP.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl2.xaml.cs">
+      <DependentUpon>UserControl2.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WorkersCabinet.xaml.cs">
+      <DependentUpon>WorkersCabinet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="WPFUserControl.xaml.cs">
+      <DependentUpon>WPFUserControl.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AboutUs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddTask.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AdminsCabinet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Laba7_8.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Dictionaries\ThemeLightLanguageENG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Dictionaries\ThemeDarkLanguageRUS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Dictionaries\ButtonInMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Basket.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cabinet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Consultation.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Help.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="AboutUs.xaml.cs">
+      <DependentUpon>AboutUs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="AdminsCabinet.xaml.cs">
+      <DependentUpon>AdminsCabinet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Basket.xaml.cs">
+      <DependentUpon>Basket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cabinet.xaml.cs">
+      <DependentUpon>Cabinet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Consultation.xaml.cs">
+      <DependentUpon>Consultation.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Help.xaml.cs">
+      <DependentUpon>Help.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="Menu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ProfileSettings.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Registration.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Dictionaries\ThemeDarkLanguageENG.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Resources\Dictionaries\ThemeLightLanguageRUS.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="TOP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserControl2.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WorkersCabinet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WPFUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ProfileSettings.xaml.cs">
+      <DependentUpon>ProfileSettings.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="ClassDiagram1.cd" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\Information\Лист_задания.docx" />
+    <None Include="Resources\Information\темы курсовых_2019.pdf" />
+    <None Include="Resources\Information\Требования_к_курсовому поООП, ООТСП,СТПМУ_2020.pdf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Resources\Icon\close.ico" />
+    <Resource Include="Resources\Icon\close_64.png" />
+    <Resource Include="Resources\Icon\contact.ico" />
+    <Resource Include="Resources\Icon\contact_64.png" />
+    <Resource Include="Resources\Icon\icons8-airport-transfer-100 %281%29.png" />
+    <Resource Include="Resources\Icon\icons8-airport-transfer-100.png" />
+    <Resource Include="Resources\Icon\icons8-event-100.png" />
+    <Resource Include="Resources\Icon\icons8-menu-64 %281%29.png" />
+    <Resource Include="Resources\Icon\icons8-shopping-cart-48.png" />
+    <Resource Include="Resources\Icon\icons8-shopping-cart-96.png" />
+    <Resource Include="Resources\Icon\icons8-shutdown-64.ico" />
+    <Resource Include="Resources\Icon\icons8-us-dollar-64.png" />
+    <Resource Include="Resources\Icon\icons8-меню-filled-100.png" />
+    <Resource Include="Resources\Icon\icons8_about.ico" />
+    <Resource Include="Resources\Icon\icons8_about_16.png" />
+    <Resource Include="Resources\Icon\icons8_about_32.png" />
+    <Resource Include="Resources\Icon\icons8_black_tie.ico" />
+    <Resource Include="Resources\Icon\icons8_black_tie2.ico" />
+    <Resource Include="Resources\Icon\icons8_black_tie2_16.png" />
+    <Resource Include="Resources\Icon\icons8_black_tie2_32.png" />
+    <Resource Include="Resources\Icon\icons8_black_tie_16.png" />
+    <Resource Include="Resources\Icon\icons8_black_tie_32.png" />
+    <Resource Include="Resources\Icon\icons8_contacts.ico" />
+    <Resource Include="Resources\Icon\icons8_contacts_16.png" />
+    <Resource Include="Resources\Icon\icons8_contacts_32.png" />
+    <Resource Include="Resources\Icon\icons8_contacts_64.png" />
+    <Resource Include="Resources\Icon\icons8_corleone_family_emblem.ico" />
+    <Resource Include="Resources\Icon\icons8_corleone_family_emblem_16.png" />
+    <Resource Include="Resources\Icon\icons8_corleone_family_emblem_32.png" />
+    <Resource Include="Resources\Icon\icons8_corleone_family_emblem_64.png" />
+    <Resource Include="Resources\Icon\icons8_document.ico" />
+    <Resource Include="Resources\Icon\icons8_document_16.png" />
+    <Resource Include="Resources\Icon\icons8_document_32.png" />
+    <Resource Include="Resources\Icon\icons8_dropbox.ico" />
+    <Resource Include="Resources\Icon\icons8_dropbox_16.png" />
+    <Resource Include="Resources\Icon\icons8_dropbox_32.png" />
+    <Resource Include="Resources\Icon\icons8_dropbox_64.png" />
+    <Resource Include="Resources\Icon\icons8_facebook.ico" />
+    <Resource Include="Resources\Icon\icons8_facebook_16.png" />
+    <Resource Include="Resources\Icon\icons8_facebook_32.png" />
+    <Resource Include="Resources\Icon\icons8_gmail.ico" />
+    <Resource Include="Resources\Icon\icons8_gmail_16.png" />
+    <Resource Include="Resources\Icon\icons8_gmail_32.png" />
+    <Resource Include="Resources\Icon\icons8_google_alerts.ico" />
+    <Resource Include="Resources\Icon\icons8_google_alerts_16.png" />
+    <Resource Include="Resources\Icon\icons8_google_alerts_32.png" />
+    <Resource Include="Resources\Icon\icons8_google_calendar.ico" />
+    <Resource Include="Resources\Icon\icons8_google_calendar_16.png" />
+    <Resource Include="Resources\Icon\icons8_google_calendar_32.png" />
+    <Resource Include="Resources\Icon\icons8_google_play.ico" />
+    <Resource Include="Resources\Icon\icons8_google_play_16.png" />
+    <Resource Include="Resources\Icon\icons8_google_play_32.png" />
+    <Resource Include="Resources\Icon\icons8_google_translate.ico" />
+    <Resource Include="Resources\Icon\icons8_google_translate_16.png" />
+    <Resource Include="Resources\Icon\icons8_google_translate_32.png" />
+    <Resource Include="Resources\Icon\icons8_home.ico" />
+    <Resource Include="Resources\Icon\icons8_home_16.png" />
+    <Resource Include="Resources\Icon\icons8_home_32.png" />
+    <Resource Include="Resources\Icon\icons8_india_national_cricket_team.ico" />
+    <Resource Include="Resources\Icon\icons8_india_national_cricket_team_16.png" />
+    <Resource Include="Resources\Icon\icons8_india_national_cricket_team_32.png" />
+    <Resource Include="Resources\Icon\icons8_india_national_cricket_team_64.png" />
+    <Resource Include="Resources\Icon\icons8_info.ico" />
+    <Resource Include="Resources\Icon\icons8_info_16.png" />
+    <Resource Include="Resources\Icon\icons8_info_32.png" />
+    <Resource Include="Resources\Icon\icons8_info_64.png" />
+    <Resource Include="Resources\Icon\icons8_instagram.ico" />
+    <Resource Include="Resources\Icon\icons8_instagram_16.png" />
+    <Resource Include="Resources\Icon\icons8_instagram_32.png" />
+    <Resource Include="Resources\Icon\icons8_jdownloader.ico" />
+    <Resource Include="Resources\Icon\icons8_jdownloader_16.png" />
+    <Resource Include="Resources\Icon\icons8_jdownloader_32.png" />
+    <Resource Include="Resources\Icon\icons8_key.ico" />
+    <Resource Include="Resources\Icon\icons8_key_256.png" />
+    <Resource Include="Resources\Icon\icons8_launch_box.ico" />
+    <Resource Include="Resources\Icon\icons8_launch_box_16.png" />
+    <Resource Include="Resources\Icon\icons8_launch_box_32.png" />
+    <Resource Include="Resources\Icon\icons8_odnoklassniki.ico" />
+    <Resource Include="Resources\Icon\icons8_odnoklassniki_16.png" />
+    <Resource Include="Resources\Icon\icons8_odnoklassniki_32.png" />
+    <Resource Include="Resources\Icon\icons8_reddit.ico" />
+    <Resource Include="Resources\Icon\icons8_reddit_16.png" />
+    <Resource Include="Resources\Icon\icons8_reddit_32.png" />
+    <Resource Include="Resources\Icon\icons8_twitter.ico" />
+    <Resource Include="Resources\Icon\icons8_twitter_16.png" />
+    <Resource Include="Resources\Icon\icons8_twitter_32.png" />
+    <Resource Include="Resources\Icon\icons8_viber.ico" />
+    <Resource Include="Resources\Icon\icons8_viber_16.png" />
+    <Resource Include="Resources\Icon\icons8_viber_32.png" />
+    <Resource Include="Resources\Icon\icons8_vk_com.ico" />
+    <Resource Include="Resources\Icon\icons8_vk_com_16.png" />
+    <Resource Include="Resources\Icon\icons8_vk_com_32.png" />
+    <Resource Include="Resources\Icon\icons8_whatsapp.ico" />
+    <Resource Include="Resources\Icon\icons8_whatsapp_64.png" />
+    <Resource Include="Resources\Icon\LIST.ico" />
+    <Resource Include="Resources\Icon\LIST_64.png" />
+    <Resource Include="Resources\Icon\money.ico" />
+    <Resource Include="Resources\Icon\money2.ico" />
+    <Resource Include="Resources\Icon\money2_16.png" />
+    <Resource Include="Resources\Icon\money2_32.png" />
+    <Resource Include="Resources\Icon\money_16.png" />
+    <Resource Include="Resources\Icon\money_32.png" />
+    <Resource Include="Resources\Icon\name.ico" />
+    <Resource Include="Resources\Icon\name_64.png" />
+    <Resource Include="Resources\Icon\offices.ico" />
+    <Resource Include="Resources\Icon\offices_64.png" />
+    <Resource Include="Resources\Icon\password.ico" />
+    <Resource Include="Resources\Icon\password_64.png" />
+    <Resource Include="Resources\Icon\surname.ico" />
+    <Resource Include="Resources\Icon\surname2.ico" />
+    <Resource Include="Resources\Icon\surname2_64.png" />
+    <Resource Include="Resources\Icon\surname_64.png" />
+    <Resource Include="Resources\Icon\user.ico" />
+    <Resource Include="Resources\Icon\user_64.png" />
+    <Resource Include="Resources\Icon\ЕУЫЕРЩУ.ico" />
+    <Resource Include="Resources\Icon\ЕУЫЕРЩУ_16.png" />
+    <Resource Include="Resources\Icon\настройки.ico" />
+    <Resource Include="Resources\Icon\настройки_64.png" />
+    <Resource Include="Resources\Icon\ЫВАПЬ.ico" />
+    <Resource Include="Resources\Icon\ЫВАПЬ_64.png" />
+    <Resource Include="Resources\Pictures\Application\084.gif" />
+    <Resource Include="Resources\Pictures\Application\102404068-artificial-intelligence-ai-machine-learning-with-data-mining-technology-on-virtual-dachboard-busines.jpg" />
+    <Resource Include="Resources\Pictures\Application\1b2adca766fe81b8538777b22587a96f.jpg" />
+    <Resource Include="Resources\Pictures\Application\4.jpg" />
+    <Resource Include="Resources\Pictures\Application\674081.jpg" />
+    <Resource Include="Resources\Pictures\Application\bigstock-Document-Management-Data-Syste-253598821 %281%29.jpg" />
+    <Resource Include="Resources\Pictures\Application\Bringing-Calm-To-The-Network-Chaos-1.medium.jpg" />
+    <Resource Include="Resources\Pictures\Application\Business-Technology.jpg" />
+    <Resource Include="Resources\Pictures\Application\Customer-Churn-Analytics.jpg" />
+    <Resource Include="Resources\Pictures\Application\d1.gif" />
+    <Resource Include="Resources\Pictures\Application\db376fab9dc33faca233fd7f2dacf980.gif" />
+    <Resource Include="Resources\Pictures\Application\dl-DPW5.gif" />
+    <Resource Include="Resources\Pictures\Application\E0jz.gif" />
+    <Resource Include="Resources\Pictures\Application\GzgM.gif" />
+    <Resource Include="Resources\Pictures\Application\image_861512161450183901648.gif" />
+    <Resource Include="Resources\Pictures\Application\LE57.gif" />
+    <Resource Include="Resources\Pictures\Application\main_wave_circle.2.gif" />
+    <Resource Include="Resources\Pictures\Application\RLur.gif" />
+    <Resource Include="Resources\Pictures\Application\Slvj.gif" />
+    <Resource Include="Resources\Pictures\Emblem\Emblem.png" />
+    <Resource Include="Resources\Pictures\Emblem\Icon.ico" />
+    <Resource Include="Resources\Pictures\Emblem\Name.png" />
+    <Resource Include="Resources\Pictures\Emblem\Безымянный.png" />
+    <Resource Include="Resources\Pictures\Emblem\Безымянный2.png" />
+    <Resource Include="Resources\Pictures\Users\129e7cbf3ff3cc7d03c87f31dc2f7af9.jpg" />
+    <Resource Include="Resources\Pictures\Users\561c6c39d0d9e0a4656a0fec8848629c.jpg" />
+    <Resource Include="Resources\Pictures\Users\koshka-vysovyvaet-konchik-yazyka1-1024x730.jpg" />
+    <Resource Include="Resources\Pictures\Users\og_og_1471497677263335265.jpg" />
+    <Resource Include="Resources\Pictures\Users\R6e4Ma2.jpg" />
+    <Resource Include="Resources\Pictures\Users\tg2HRSWEHfM.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Colors\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\NormalSelect.cur" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Source\TextSelect.cur" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\MaterialDesignThemes.3.1.1\build\MaterialDesignThemes.targets" Condition="Exists('..\packages\MaterialDesignThemes.3.1.1\build\MaterialDesignThemes.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Данный проект ссылается на пакеты NuGet, отсутствующие на этом компьютере. Используйте восстановление пакетов NuGet, чтобы скачать их.  Дополнительную информацию см. по адресу: http://go.microsoft.com/fwlink/?LinkID=322105. Отсутствует следующий файл: {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\MaterialDesignThemes.3.1.1\build\MaterialDesignThemes.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\MaterialDesignThemes.3.1.1\build\MaterialDesignThemes.targets'))" />
+  </Target>
+</Project>

@@ -1,0 +1,80 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: Texture.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+cbuffer TextureBuffer
+{
+	float threshold;
+	float2 spread;
+	float padding;
+};
+
+
+Texture2D shaderTexture;
+SamplerState SampleType;
+
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	float2 thresh = float2(threshold, threshold); 
+	float4 c = shaderTexture.Sample(SampleType, frac(input.tex)); 
+	float sum = c.x; 
+	float2 denom = float2(0.5, 0.5); 
+
+	float cn, cp, cpc, cnc; 
+	float dn, dp, wn, wp; 
+	float2 d, w; 
+
+	float2 texcoord_p1 = frac(input.tex + spread);
+	float2 texcoord_m1 = frac(input.tex - spread);
+	cn = shaderTexture.Sample(SampleType, texcoord_p1).x; 
+	cp = shaderTexture.Sample(SampleType, texcoord_m1).x; 
+	cpc = cp - c.x; 
+	cnc = cn - c.x; 
+	d = float2(cnc*cnc, cpc*cpc); 
+	w = thresh - min(thresh,d); 
+	w /= thresh; 
+	denom += w; 
+	sum += w.x * cn + w.y * cp; 
+
+	float2 texcoord_p2 = frac(input.tex + 2 * spread);
+	float2 texcoord_m2 = frac(input.tex - 2 * spread);
+	cn = shaderTexture.Sample(SampleType, texcoord_p2).x; 
+	cp = shaderTexture.Sample(SampleType, texcoord_m2).x; 
+	cpc = cp - c.x; 
+	cnc = cn - c.x; 
+	d = float2(cnc*cnc, cpc*cpc); 
+	w = thresh - min(thresh,d); 
+	w /= thresh; 
+	denom += w; 
+	sum += w.x * cn + w.y * cp; 
+
+	float2 texcoord_p3 = frac(input.tex + 3 * spread);
+	float2 texcoord_m3 = frac(input.tex - 3 * spread);
+	cn = shaderTexture.Sample(SampleType, texcoord_p3).x; 
+	cp = shaderTexture.Sample(SampleType, texcoord_m3).x; 
+	cpc = cp - c.x; 
+	cnc = cn - c.x; 
+	d = float2(cnc*cnc, cpc*cpc); 
+	w = thresh - min(thresh,d); 
+	w /= thresh; 
+	denom += w; 
+	sum += w.x * cn + w.y * cp; 
+
+	return float4(sum/(denom.x+denom.y), c.y, c.z, c.w); 
+}

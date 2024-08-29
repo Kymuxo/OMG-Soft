@@ -1,0 +1,51 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: autofix.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+
+Texture2D shaderTexture;
+Texture2D redTexture;
+Texture2D greenTexture;
+Texture2D blueTexture;
+SamplerState SampleType;
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	float4 textureColor;
+    // Sample the pixel color from the texture using the sampler at this texture coordinate location.
+    textureColor = shaderTexture.Sample(SampleType, input.tex);
+
+	//for premultiplied image
+	if(textureColor.a != 0.0) textureColor.rgb /= textureColor.a;
+	
+	float2 indexRed = float2(textureColor.r, 0.0);
+    float4 redColor = redTexture.Sample(SampleType, indexRed);
+    
+    float2 indexGreen = float2(textureColor.g, 0.0);
+    float4 greenColor = greenTexture.Sample(SampleType, indexGreen);
+    
+    float2 indexBlue = float2(textureColor.b, 0.0);
+    float4 blueColor = blueTexture.Sample(SampleType, indexBlue);
+	
+	textureColor = float4(redColor.r, greenColor.g, blueColor.b, textureColor.a);
+
+	//for premultiplied image
+	textureColor.rgb *= textureColor.a;
+
+	return textureColor;
+}

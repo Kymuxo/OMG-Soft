@@ -1,0 +1,60 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: Texture.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+cbuffer TextureBuffer
+{
+	float threshold_top;
+	float3 color_top;
+	float threshold_bottom;
+	float3 color_middle;
+	float3 color_bottom;
+	float padding1;
+};
+
+
+Texture2D shaderTexture;
+SamplerState SampleType;
+
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	float4 textureColor;
+    // Sample the pixel color from the texture using the sampler at this texture coordinate location.
+    textureColor = shaderTexture.Sample(SampleType, input.tex);
+	
+	if (textureColor.a != 0.0)
+	{
+		textureColor.rgb /= textureColor.a;
+	}
+
+	float3 w = float3(0.299, 0.587, 0.114);
+	float lum = dot(textureColor.rgb, w);
+
+	float3 color = float3(0.0, 0.0, 0.0);
+
+	color += color_top/255.0f * step(threshold_top, lum);  
+	color += color_middle/255.0f * step(lum, threshold_top) * step(threshold_bottom, lum);  
+	color += color_bottom/255.0f * step(lum, threshold_bottom);  
+
+	color.rgb *= textureColor.a;
+
+	textureColor = float4(color, textureColor.a);  
+	
+	return textureColor;
+}

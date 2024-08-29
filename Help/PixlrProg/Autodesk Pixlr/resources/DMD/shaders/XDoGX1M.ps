@@ -1,0 +1,44 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: Texture.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+cbuffer TextureBuffer
+{
+	float3 color;
+	float p;
+	float e;
+	float3 padding;
+};
+
+
+Texture2D Texture1;
+Texture2D Texture2;
+SamplerState SampleType;
+
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	float2 d1 = Texture1.Sample(SampleType, input.tex).ra;
+	float2 d2 = Texture2.Sample(SampleType, input.tex).ra;
+	float H = 100.0 * ((1.0 + p) * d1.x - p * d2.x);
+	float3 edge = (H > e) ? float3(1.0, 1.0, 1.0) : color;
+	float Ha = 100.0 * ((1.0 + p) * d1.y - p * d2.y);
+	float a = (Ha > e) ? 1.0 : 0.0;
+
+	return float4(edge, a);
+}

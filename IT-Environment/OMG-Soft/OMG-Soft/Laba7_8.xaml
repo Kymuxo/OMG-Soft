@@ -1,0 +1,59 @@
+﻿<Window x:Class="OMG_Soft.Laba7_8"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:local="clr-namespace:OMG_Soft"
+        mc:Ignorable="d"
+        Title="ToDoList" Height="639.6" Width="1000">
+    <Grid Style="{DynamicResource MainGridBackground}" Margin="0,0,-0.4,-2.6">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="234"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+
+            <ColumnDefinition Width="140*"/>
+            <ColumnDefinition Width="653*"/>
+        </Grid.ColumnDefinitions>
+
+
+
+        <Button Cursor="Source\NormalSelect.cur" Style="{DynamicResource BaseButton}"  Command="{Binding AddCommand}" Margin="28,19,27.2,183.4" Grid.Row="1" Height="Auto" Content="{DynamicResource Add}" />
+        <Button Cursor="Source\NormalSelect.cur" Style="{DynamicResource BaseButton}"  Command="{Binding DeleteCommand}" Margin="28,71,27.2,132.4" Grid.Row="1" Height="Auto" Content="{DynamicResource Delete}" />
+        <Button Cursor="Source\NormalSelect.cur" Style="{DynamicResource BaseButton}"  Command="{Binding EditCommand}" Margin="28,123,27.2,79.4" Grid.Row="1" Height="Auto" Content="{DynamicResource Edit}" />
+
+        <ListView Grid.Column="1" HorizontalAlignment="Left" Margin="9.8,10,0,-192.6" Width="798" ItemsSource="{Binding listTask, Mode=OneWay}" SelectedItem="{Binding selectedTask, Mode=OneWayToSource}" Grid.Row="1">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="{DynamicResource Title}" DisplayMemberBinding="{Binding Title}"/>
+                    <GridViewColumn Header="{DynamicResource Category}" DisplayMemberBinding="{Binding Category}"/>
+                    <GridViewColumn Header="{DynamicResource Priority}" DisplayMemberBinding="{Binding Priority}"/>
+                    <GridViewColumn Header="{DynamicResource Status}" DisplayMemberBinding="{Binding Status}"/>
+                    <GridViewColumn Header="{DynamicResource Date}" DisplayMemberBinding="{Binding GetStartTime}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Separator HorizontalAlignment="Left" Height="53" Margin="175,419,0,-237.6" Grid.Row="1" VerticalAlignment="Top" Width="808" Grid.ColumnSpan="2"/>
+
+        <TextBlock Background="White" HorizontalAlignment="Left" Margin="175,457,0,-312.6" Grid.Row="1" TextWrapping="Wrap"  VerticalAlignment="Top" x:Name="block" Height="90" Width="798" Text="{Binding GetDescription, Mode=OneWay}" Grid.ColumnSpan="2" />
+
+        <Button Content="{DynamicResource Category}" Style="{DynamicResource BaseButton}" HorizontalAlignment="Left" Margin="28,220,0,-5.6" Grid.Row="1" VerticalAlignment="Top" Height="20"  Width="120" Command="{Binding SortByCategoryCommand}"/>
+        <Button Content="{DynamicResource Priority}" Style="{DynamicResource BaseButton}" HorizontalAlignment="Left" Margin="28,259,0,-44.6" Grid.Row="1" VerticalAlignment="Top" Height="20" Width="120" Command="{Binding SortByPriorityCommand}"/>
+        <Button Content="{DynamicResource Status}" Style="{DynamicResource BaseButton}" HorizontalAlignment="Left" Margin="28,298,0,-83.6" Grid.Row="1" VerticalAlignment="Top" Height="20" Width="120" Command="{Binding SortByStatusCommand}"/>
+
+        <Button Template="{StaticResource CircButton1}" Margin="14,507,91.2,-312.6" Command="{Binding UndoCommand}" Grid.Row="1" Height="Auto" >
+            <materialDesign:PackIcon Kind="Undo" Width="15" Height="15" />
+        </Button>
+        <Button Template="{StaticResource CircButton2}" Margin="95,507,10.2,-312.6" Command="{Binding RedoCommand}" Grid.Row="1" Height="Auto" >
+            <materialDesign:PackIcon Kind="Redo" Width="15" Height="15" />
+        </Button>
+
+        <Button Content="{DynamicResource Style}" Command="{Binding StyleCommand}" HorizontalAlignment="Left" Margin="41,352,0,-145.6" VerticalAlignment="Top" Width="98" Height="28" Grid.Row="1"/>
+        <Button Content="{DynamicResource Language}" Command="{Binding ChangeLanguageCommand}" HorizontalAlignment="Left" Margin="41,399,0,-192.6" VerticalAlignment="Top" Width="98" Height="28" Grid.Row="1"/>
+    </Grid>
+</Window>

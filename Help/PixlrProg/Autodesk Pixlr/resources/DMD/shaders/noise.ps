@@ -1,0 +1,46 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: noise.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+cbuffer TextureBuffer
+{
+	float uAmount;
+	float3 padding;
+};
+
+
+Texture2D shaderTexture;
+SamplerState SampleType;
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+float rand(float2 co) {
+   return frac(sin(dot(co.xy, float2(12.9898, 78.233))) * 43758.5453);
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	float4 textureColor;
+    // Sample the pixel color from the texture using the sampler at this texture coordinate location.
+    textureColor = shaderTexture.Sample(SampleType, input.tex);
+
+	float diff = (rand(input.tex) - 0.5) * uAmount * 0.5; // here multiply 0.5 in order to match the express flash version
+	textureColor.r += diff;
+	textureColor.g += diff;
+	textureColor.b += diff;
+
+	return textureColor;
+}

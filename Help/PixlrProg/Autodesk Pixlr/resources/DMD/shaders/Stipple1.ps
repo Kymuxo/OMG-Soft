@@ -1,0 +1,94 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: Texture.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+cbuffer TextureBuffer
+{
+	float4 Global_tileRegion;
+	float2 Global_tileSize;
+	float delta;
+	float tile;
+	float light;
+	float aspectRatio;
+	float2 padding;
+};
+
+
+Texture2D Texture;
+SamplerState SampleType;
+
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+float2 tile2World(float2 tpos)
+{
+	float2 pos = (Global_tileRegion.xy + tpos.xy * Global_tileRegion.zw)*float2(1.0,1.0/aspectRatio);;
+	return pos;
+}
+
+float2 world2Tile(float2 wpos)
+{
+	float2 pos =  (float2(1.0, aspectRatio) * wpos - Global_tileRegion.xy)/(Global_tileRegion.zw);
+	return pos;
+}
+
+
+float3 back = float3(1.0, 1.0, 1.0); 
+float3 front = float3(0.0, 0.0, 0.0); 
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+  float2 coord = tile2World(input.tex); //* texsize; 
+  float2 center = tile*(floor(coord/tile) + 0.5); 
+  float4 c1 = Texture.Sample(SampleType, input.tex);
+  float4 c2 = Texture.Sample(SampleType, world2Tile(center));
+
+  float2 steps = Global_tileSize;
+  float n = 0.0;
+  float4 col = float4(0.0,0.0,0.0,0.0);
+  [unroll(4)] 
+  for(int j = -4;j <= 4;j++)
+    {
+	 [unroll(4)] 
+      for(int i = -4;i <= 4;i++)
+  	{
+  	  col += Texture.Sample(SampleType, world2Tile(center + 0.5*tile*float2(i,j)/9.0));
+  	  n++;
+  	}
+    }
+  col = col/n;
+
+  float3 w = float3(0.2125, 0.7154, 0.0721); 
+  float lum = light*0.5*dot(col.rgb/col.a,w);
+
+  float s = 0.0;
+  float radius = clamp(1.0 - lum, 0.0, 1.0)*0.5*tile;
+  n = 0.0;
+   [unroll(5)] 
+  for(int k = -5;k <= 5;k++)
+    {
+	 [unroll(5)] 
+      for(int o = -5;o <= 5;o++)
+	{
+	  float dist = length(coord + delta*(float2(o,k)*(0.5/5.0)) - center); 	   
+	  s += step(radius, dist);
+	  n++;
+	}
+    }
+  s = s/n;
+  float value = s*c1.a;
+  return float4(float3(value, value, value), c1.a);
+}
+

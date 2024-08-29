@@ -1,0 +1,42 @@
+﻿@model IEnumerable<WebApplication1.Models.Products>
+
+@{
+    ViewBag.Title = "All";
+}
+
+<h2>НАШИ ПРОДУКТЫ</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            Наименование
+            @*@Html.DisplayNameFor(model => model.Name)*@
+        </th>
+        <th>
+            Цена
+            @*@Html.DisplayNameFor(model => model.Cost)*@
+        </th>
+        <th>
+            Количество
+            @*@Html.DisplayNameFor(model => model.Atm)*@
+        </th>
+        
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Cost)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Atm)
+        </td>
+        
+    </tr>
+}
+
+</table>

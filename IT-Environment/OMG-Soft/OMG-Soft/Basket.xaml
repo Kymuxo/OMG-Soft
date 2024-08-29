@@ -1,0 +1,56 @@
+﻿<Window x:Class="OMG_Soft.Basket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OMG_Soft"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        mc:Ignorable="d" Height="600" Width="900" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Icon="Resources/Pictures/Emblem/Icon.ico">
+
+    <Grid Style="{DynamicResource MainGridBackground}" Loaded="Grid_Loaded">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="900"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Height="35" Width="Auto" MouseLeftButtonDown="Grid_MouseLeftButtonDown"  Style="{DynamicResource HeadGridBackground}">
+            <Label Content="OMG-Soft" HorizontalAlignment="Left" Style="{DynamicResource HeadLableStyle}" Margin="5,0,0,1" Width="895"/>
+        </Grid>
+
+        <Grid Grid.Column="0" Grid.Row="1">
+            
+            <Label Name="ElementsStyle" Margin="1186,675,-678,-134" Style="{DynamicResource DateComboStyle}"/>
+
+            <Label Content="{DynamicResource m_btServices}" Style="{DynamicResource Main2LableStyle}" HorizontalAlignment="Left" Margin="51,108,0,0" VerticalAlignment="Top"/>
+            <Label Content="{DynamicResource m_btProducts}" Style="{DynamicResource Main2LableStyle}" HorizontalAlignment="Left" Margin="51,205,0,0" VerticalAlignment="Top"/>
+
+            <DatePicker Name="monthCalendar" FontFamily="Palatino Linotype" FontSize="18" BorderThickness="1" Margin="640,198,41,330.8" Foreground="{Binding ElementName=ElementsStyle, Path=Foreground}" Height="36" Background="{Binding ElementName=ElementsStyle, Path=Background}" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}"/>
+
+            <ComboBox Name="cbProducts" DropDownOpened="cbProducts_Select" HorizontalAlignment="Left" Margin="51,234,0,0" VerticalAlignment="Top" Width="219" FontFamily="Palatino Linotype" FontSize="18" Foreground="{Binding ElementName=ElementsStyle, Path=Foreground}" Background="{Binding ElementName=ElementsStyle, Path=Background}" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}"/>
+            <ComboBox Name="cbWorkers" DropDownOpened="cbWorkers_Select" HorizontalAlignment="Left" Margin="223,405,0,0" VerticalAlignment="Top" Width="219" FontFamily="Palatino Linotype" FontSize="18" Foreground="{Binding ElementName=ElementsStyle, Path=Foreground}" Background="{Binding ElementName=ElementsStyle, Path=Background}" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}"/>
+            <ComboBox Name="cbServices" DropDownOpened="cbServices_Select" HorizontalAlignment="Left" Margin="51,139,0,0" VerticalAlignment="Top" Width="219" FontFamily="Palatino Linotype" FontSize="18" Foreground="{Binding ElementName=ElementsStyle, Path=Foreground}" Background="{Binding ElementName=ElementsStyle, Path=Background}" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}"/>
+            
+            <Grid Height="106" Margin="482,405,106,0" VerticalAlignment="Top">
+                <Border CornerRadius="10" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}" BorderThickness="0.5" Background="{Binding ElementName=ElementsStyle, Path=Background}"/>
+                <TextBox x:Name="tbAdress" Style="{StaticResource MaterialDesignOutlinedTextFieldTextBox}" TextWrapping="Wrap" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}" Foreground="{Binding ElementName=ElementsStyle, Path=Foreground}" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+            </Grid>
+
+            <Label Content="{DynamicResource m_lbYourOrder}" Style="{DynamicResource MainLableStyle}" HorizontalAlignment="Left" Margin="51,60,0,0" VerticalAlignment="Top"/>
+            <Label Content="{DynamicResource m_lbChooseWorker}" Style="{DynamicResource MainLableStyle}" HorizontalAlignment="Left" Margin="219,358,0,0" VerticalAlignment="Top"/>
+            <Label Content="{DynamicResource m_lbChooseDate}" Style="{DynamicResource MainLableStyle}" HorizontalAlignment="Left" Margin="640,140,0,0" VerticalAlignment="Top"/>
+            <Label Content="{DynamicResource m_lbAdress}" Style="{DynamicResource MainLableStyle}" HorizontalAlignment="Left" Margin="546,358,0,0" VerticalAlignment="Top"/>
+            
+            <Image HorizontalAlignment="Left" Height="115" Margin="326,24,0,0" VerticalAlignment="Top" Width="278" Source="Resources/Pictures/Emblem/Name.png" Stretch="Fill"/>
+
+            <Button Name="btInCabinet" Click="btInCabinet_Click" Content="{DynamicResource m_btInCabinet}" Style="{DynamicResource BaseButton}" FontSize="17" Margin="411,164,382,0" VerticalAlignment="Top" Height="35"/>
+            <Button Name="btEnter" Click="btEnter_Click" Content="{DynamicResource m_btEnter}" Style="{DynamicResource BaseButton}" FontSize="17" Margin="411,211,382,0" VerticalAlignment="Top" Height="35"/>
+
+        </Grid>
+    </Grid>
+</Window>

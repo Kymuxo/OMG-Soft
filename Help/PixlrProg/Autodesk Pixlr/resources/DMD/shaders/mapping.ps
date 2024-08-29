@@ -1,0 +1,53 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: mapping.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+cbuffer TextureBuffer
+{
+	float uAmount;
+	float3 padding;
+};
+
+
+Texture2D shaderTexture;
+Texture2D red;
+Texture2D green;
+Texture2D blue;
+SamplerState SampleType;
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	float4 textureColor;
+    // Sample the pixel color from the texture using the sampler at this texture coordinate location.
+    textureColor = shaderTexture.Sample(SampleType, input.tex);
+
+	float2 indexRed = float2(textureColor.r, 0.0);
+    float4 redColor = red.Sample(SampleType, indexRed);
+    
+    float2 indexGreen = float2(textureColor.g, 0.0);
+    float4 greenColor = green.Sample(SampleType, indexGreen);
+    
+    float2 indexBlue = float2(textureColor.b, 0.0);
+    float4 blueColor = blue.Sample(SampleType, indexBlue);
+    
+	return lerp(
+		textureColor,
+		float4(redColor.r, greenColor.g, blueColor.b, textureColor.a),
+		uAmount);
+}

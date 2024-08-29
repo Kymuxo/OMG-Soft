@@ -1,0 +1,80 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: Texture.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+cbuffer TextureBuffer
+{
+	float4 Global_tileRegion;
+	float2 Global_tileSize;
+	float tile_size;
+	float aspectRatio;
+};
+
+
+Texture2D Texture;
+SamplerState SampleType;
+
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+
+float2 tile2World(float2 tpos)
+{
+	float2 pos = float2(1.0, 1.0/aspectRatio) * (Global_tileRegion.xy + tpos.xy * Global_tileRegion.zw);
+	return pos;
+}
+
+float2 world2Tile(float2 wpos)
+{
+   float2 pos = (float2(1.0, aspectRatio) * wpos - Global_tileRegion.xy) / Global_tileRegion.zw;
+   return pos;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	float2 cell = float2(tile_size, tile_size);
+	float4 col = float4(0.0, 0.0, 0.0, 0.0);
+	float2 s = Global_tileSize / 9.0;
+	float n = 0.0;
+
+	[unroll(4)]
+	for(int j = -4; j <= 4; j++)
+	{
+		[unroll(4)]
+		for(int i = -4; i <= 4; i++)
+		{
+			float2 coord = tile2World(input.tex + s * float2(i, j)) / cell;
+			float2 c = floor(coord);
+			float2 d = frac(coord);
+			
+			bool u1 = (d.x <= d.y);
+			bool u2 = ((1.0 - d.x) <= d.y);
+
+			d = (u1 && !u2) ? float2(0.25, 0.5) : d;
+			d = (u1 && u2) ? float2(0.5, 0.75) : d;
+			d = (!u1 && u2) ? float2(0.75, 0.5) : d;
+			d = (!u1 && !u2) ? float2(0.5, 0.25) : d;
+			 
+			float2 pos = world2Tile((c + d) * cell);
+			col += Texture.Sample(SampleType, pos);
+			n++;
+		}
+	}
+
+	col = col / n;
+
+	return col;
+}

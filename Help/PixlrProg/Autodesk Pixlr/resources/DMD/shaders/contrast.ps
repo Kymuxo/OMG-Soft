@@ -1,0 +1,57 @@
+////////////////////////////////////////////////////////////////////////////////
+// Filename: contrast.ps
+////////////////////////////////////////////////////////////////////////////////
+
+/////////////
+// GLOBALS //
+/////////////
+cbuffer TextureBuffer
+{
+	float uContrast;
+	float uBrightness;
+	float padding1;
+	float padding2;
+};
+
+
+Texture2D shaderTexture;
+SamplerState SampleType;
+
+//////////////
+// TYPEDEFS //
+//////////////
+struct PixelInputType
+{
+    float4 position : SV_POSITION;
+    float2 tex : TEXCOORD0;
+};
+
+////////////////////////////////////////////////////////////////////////////////
+// Pixel Shader
+////////////////////////////////////////////////////////////////////////////////
+float4 TexturePixelShader(PixelInputType input) : SV_TARGET
+{
+	float4 textureColor;
+    // Sample the pixel color from the texture using the sampler at this texture coordinate location.
+    textureColor = shaderTexture.Sample(SampleType, input.tex);
+
+	float3 rgbcolor = textureColor.rgb;
+
+	float nStepB = uBrightness * 0.498;
+
+	 if(textureColor.a != 0.0)
+	{
+		rgbcolor += nStepB;
+		if (uContrast > 0.0) 
+		{
+				float nStepC = uContrast * 0.687;
+				rgbcolor = (rgbcolor - 0.5) / (1.0 - nStepC) + 0.5;
+		} 
+		else 
+		{
+				float nStepC = uContrast * 1.123;
+				rgbcolor = (rgbcolor - 0.5) * (1.0 + nStepC) + 0.5;
+		}	
+	}
+    return float4(rgbcolor, textureColor.a);
+}

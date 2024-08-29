@@ -1,0 +1,23 @@
+﻿<UserControl x:Class="OMG_Soft.UserControl2"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:OMG_Soft"
+             Name="MyControl2"
+             mc:Ignorable="d" Height="150" Width="250">
+    <Grid>
+        <Grid x:Name="MyContent" Visibility="Collapsed">
+            <DockPanel Margin="5">
+                <ContentControl Content="{Binding Title, ElementName=MyControl2}" DockPanel.Dock="Left" />
+                <Button Content="Hide" DockPanel.Dock="Right" Click="Button_Click"/>
+                <ContentControl Content="{Binding Price, ElementName=MyControl2}" DockPanel.Dock="Left" />
+            </DockPanel>
+        </Grid>
+        <Grid x:Name="MyButton" Visibility="Visible">
+            <DockPanel Margin="5">
+                <Button Name="DirectButton" Content="Show" Click="Button_Click" Height="Auto" Margin="0,0,0,0.8"/>
+            </DockPanel>
+        </Grid>
+    </Grid>
+</UserControl>

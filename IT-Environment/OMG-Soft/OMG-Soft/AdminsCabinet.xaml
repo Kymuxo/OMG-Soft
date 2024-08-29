@@ -1,0 +1,441 @@
+﻿<Window x:Class="OMG_Soft.AdminsCabinet"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        xmlns:local="clr-namespace:OMG_Soft"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d" Height="750" Width="1200" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Icon="Resources/Pictures/Emblem/Icon.ico">
+
+    <Window.Resources>
+        
+        <Storyboard x:Key="OpenMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="75"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="300"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        
+        <Storyboard x:Key="CloseMenu">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="GridMenu">
+                <EasingDoubleKeyFrame KeyTime="0" Value="300"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="75"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        
+        <Storyboard x:Key="OpenMenu2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="Screen">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1125"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="900"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        
+        <Storyboard x:Key="CloseMenu2">
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Width)" Storyboard.TargetName="Screen">
+                <EasingDoubleKeyFrame KeyTime="0" Value="900"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="1125"/>
+            </DoubleAnimationUsingKeyFrames>
+        </Storyboard>
+        
+        <Storyboard x:Key="ImageAnimation">
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="LogoImage">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-360.29"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="LogoImage">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.131"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="LogoImage">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.228"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="LogoImage">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="LogoImage">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-0.4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+        </Storyboard>
+        
+        
+        <Storyboard x:Key="ImageCloseAnimation">
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="LogoImage">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="360.008"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="LogoImage">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.022"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.037"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="LogoImage">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.02"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.007"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="LogoImage">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.6"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="LogoImage">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.4"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+        </Storyboard>
+        
+        
+        <Storyboard x:Key="ImageAnimation2">
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="HidePoint">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-360.29"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="HidePoint">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.131"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="HidePoint">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.228"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="HidePoint">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="HidePoint">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-0.4"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+        </Storyboard>
+        
+        
+        <Storyboard x:Key="ImageCloseAnimation2">
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)" Storyboard.TargetName="HidePoint">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="360.008"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)" Storyboard.TargetName="HidePoint">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.022"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.037"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleY)" Storyboard.TargetName="HidePoint">
+                <EasingDoubleKeyFrame KeyTime="0" Value="1.02"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.007"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)" Storyboard.TargetName="HidePoint">
+                <EasingDoubleKeyFrame KeyTime="0" Value="0.2"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="1.6"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+            <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)" Storyboard.TargetName="HidePoint">
+                <EasingDoubleKeyFrame KeyTime="0" Value="-1"/>
+                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="-0.4"/>
+            </DoubleAnimationUsingKeyFrames>
+            
+        </Storyboard>
+        
+    </Window.Resources>
+    
+    
+    <Window.Triggers>
+        
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonOpenMenu">
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu}"/>
+            <BeginStoryboard Storyboard="{StaticResource OpenMenu2}"/>
+            <BeginStoryboard Storyboard="{StaticResource ImageAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource ImageCloseAnimation2}"/>
+        </EventTrigger>
+        
+        <EventTrigger RoutedEvent="ButtonBase.Click" SourceName="ButtonCloseMenu">
+            <BeginStoryboard Storyboard="{StaticResource CloseMenu}"/>
+<BeginStoryboard Storyboard="{StaticResource CloseMenu2}"/>
+            <BeginStoryboard Storyboard="{StaticResource ImageCloseAnimation}"/>
+            <BeginStoryboard Storyboard="{StaticResource ImageAnimation2}"/>
+</EventTrigger>
+
+    </Window.Triggers>
+
+    
+    <Grid Background="#FF252526" Loaded="Grid_Loaded">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="75*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Height="35" Width="Auto" MouseLeftButtonDown="Grid_MouseLeftButtonDown"  Background="#FF201E1E">
+            <Label Content="OMG-Soft" HorizontalAlignment="Left" FontSize="22" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" Margin="5,0,0,1" Width="1182"/>
+        </Grid>
+
+        
+        <Grid Grid.Column="0" Grid.Row="1" x:Name="GridMenu" HorizontalAlignment="Left" Height="Auto" Width="75" Grid.RowSpan="2">
+
+            <Grid.Effect>
+                <DropShadowEffect BlurRadius="2" ShadowDepth="1" Color="#FFAEAEAE"/>
+            </Grid.Effect>
+
+
+            <StackPanel Background="#FF201E1E">
+
+                <Grid Height="219" RenderTransformOrigin="0.9,0.9" Background="#FF201E1E" Margin="0,0,0.2,0">
+
+                    <Grid.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Grid.RenderTransform>
+
+                    <Button x:Name="ButtonOpenMenu" Height="75" Width="75" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="Transparent" BorderBrush="{x:Null}" Foreground="#FF02A6F2" Click="ButtonOpenMenu_Click" Margin="-2,0,2,0">
+                        <materialDesign:PackIcon Kind="Menu" Width="40" Height="40"/>
+                    </Button>
+                    
+                    <Button x:Name="ButtonCloseMenu" Visibility="Collapsed" Height="75" Width="75" HorizontalAlignment="Right" VerticalAlignment="Top" Style="{StaticResource MaterialDesignFloatingActionMiniAccentButton}" Background="{x:Null}" BorderBrush="{x:Null}" Foreground="#FF02A6F2" Click="ButtonCloseMenu_Click">
+                        <materialDesign:PackIcon Kind="ArrowLeft" Width="40" Height="40"/>
+                    </Button>
+
+                    <Image x:Name="LogoImage" Visibility="Collapsed" Height="144" VerticalAlignment="Bottom" Source="Resources/Pictures/Emblem/Name.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5" Margin="-2,0,2,0">
+                        
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                        
+                    </Image>
+                    
+                    <Image Name="HidePoint" HorizontalAlignment="Left" Height="67" Margin="0,106,0,0" VerticalAlignment="Top" Width="75" gif:ImageBehavior.AnimatedSource="Resources/Pictures/Application/LE57.gif" Stretch="Fill">
+                       
+                        <Image.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform/>
+                                <SkewTransform/>
+                                <RotateTransform/>
+                                <TranslateTransform/>
+                            </TransformGroup>
+                        </Image.RenderTransform>
+                        
+                    </Image>
+                    
+                </Grid>
+                
+                
+                <ListView x:Name="ListViewMenu" SelectionChanged="ListViewMenu_SelectionChanged" Foreground="#FF5C99D6" ScrollViewer.HorizontalScrollBarVisibility="Disabled" Margin="0,0,0.2,0">
+
+                    <ListViewItem x:Name="btCabinet" Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="StarBorder" Height="40" Width="40" Margin="10,0" Foreground="#FF02A6F2"/>
+                            <TextBlock Text="Главная" VerticalAlignment="Center" Margin="20 10" FontFamily="Bookman Old Style" Foreground="#FFF4F6F8" FontSize="22"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="btServices" Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="ClipboardListOutline" Height="40" Width="40" Margin="10,0" Foreground="#FF02A6F2"/>
+                            <TextBlock Text="Услуги" VerticalAlignment="Center"  Margin="20 10" FontFamily="Bookman Old Style" Foreground="#FFF4F6F8" FontSize="22"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="btProducts" Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="BoxVariant" Height="40" Width="40" Margin="10,0" Foreground="#FF02A6F2"/>
+                            <TextBlock Text="Товары" VerticalAlignment="Center"  Margin="20 10" FontFamily="Bookman Old Style" Foreground="#FFF4F6F8" FontSize="22"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                    <ListViewItem x:Name="btWorkers" Height="60">
+                        <StackPanel Orientation="Horizontal">
+                            <materialDesign:PackIcon Kind="Person" Height="40" Width="40" Margin="10,0" Foreground="#FF02A6F2"/>
+                            <TextBlock Text="Работники" VerticalAlignment="Center"  Margin="20 10" FontFamily="Bookman Old Style" Foreground="#FFF4F6F8" FontSize="22"/>
+                        </StackPanel>
+                    </ListViewItem>
+
+                </ListView>
+                
+                
+                <Grid Height="255" Margin="0,0,0.2,0">
+                    
+                    <Grid.Effect>
+                        <DropShadowEffect BlurRadius="2" ShadowDepth="1" Color="#FFAEAEAE"/>
+                    </Grid.Effect>
+                    
+                    <Button Name="btExit" Style="{StaticResource ButtonInMenu}" Height="50" Margin="0,160,0,0" Click="ButtonClose_Click" HorizontalAlignment="Left" Width="337">
+
+                        <StackPanel Orientation="Horizontal" Width="337">
+                            <materialDesign:PackIcon Kind="Power" Height="40" Width="40" Margin="18,4" Foreground="Red"/>
+                            <TextBlock Text="Выход" VerticalAlignment="Center"  Margin="13 10" FontFamily="Bookman Old Style" Foreground="#FFF4F6F8" FontSize="22"/>
+                        </StackPanel>
+                        
+                    </Button>
+                    
+                </Grid>
+                
+            </StackPanel>
+            
+        </Grid>
+
+        <Grid Name="Screen" Margin="0,35,0,0.4" HorizontalAlignment="Right" Width="1125" Grid.ColumnSpan="2" Grid.RowSpan="2">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid.Background>
+                <ImageBrush ImageSource="Resources/Pictures/Application/bigstock-Document-Management-Data-Syste-253598821 (1).jpg" Stretch="UniformToFill"/>
+            </Grid.Background>
+            
+            <Label Name="lbHello" Content="Здравствуйте, " HorizontalAlignment="Left" FontSize="26" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" Width="1003" Margin="10,10,0,665"/>
+            <Label Content="Добро пожаловать в личный кабинет!" HorizontalAlignment="Left" FontSize="26" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" Width="480" Margin="333,646,0,29"/>
+            
+            <Grid x:Name="lbInfo"  HorizontalAlignment="Left" Height="715" VerticalAlignment="Top" Width="1125" Background="#FF252526">
+
+                <Label Content="Добавить" FontSize="16" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="192,122,0,0" VerticalAlignment="Top"/>
+                
+                <Separator HorizontalAlignment="Left" Height="100" Margin="180,352,0,0" VerticalAlignment="Top" Width="622" RenderTransformOrigin="0.5,0.5">
+                    
+                    <Separator.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform/>
+                            <SkewTransform/>
+                            <RotateTransform Angle="90.109"/>
+                            <TranslateTransform/>
+                        </TransformGroup>
+                    </Separator.RenderTransform>
+                    
+                </Separator>
+                
+                <Grid Name="DeleteWorkers" HorizontalAlignment="Left" Height="500" Margin="544,187,0,0" VerticalAlignment="Top" Width="324">
+                    <ComboBox Name="cbWorkerSN" DropDownOpened="CbWorkerSN_DropDownOpened" HorizontalAlignment="Left" Margin="54,110,0,0" VerticalAlignment="Top" Width="219" FontFamily="Palatino Linotype" FontSize="18" Foreground="#FF02A6F2" Background="#FF151414" BorderBrush="#FF02A6F2"/>
+                    <Label Content="Фамилия работника" FontSize="16" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Margin="54,75,0,0" VerticalAlignment="Top" />
+                    <Button Name="btDeleteWorkers" Click="BtDeleteWorkers_Click" Content="Удалить" Style="{StaticResource BaseButton}" FontSize="17" Margin="83,455,79,0" VerticalAlignment="Top" Height="35" Background="#FFA01B2E"/>
+                </Grid>
+                
+                <Grid Name="AddWorkers" HorizontalAlignment="Left" Height="543" Margin="38,144,0,0" VerticalAlignment="Top" Width="406">
+                    
+                    <Grid Height="48" Margin="28,94,27,0" VerticalAlignment="Top" >
+                        <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+                        <TextBox x:Name="tbWorkerName" materialDesign:HintAssist.Hint="Имя"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="15,-8,7,3" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+                    </Grid>
+                    <Grid Height="48" Margin="28,41,27,0" VerticalAlignment="Top">
+                        <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+                        <TextBox x:Name="tbWorkerSurname" materialDesign:HintAssist.Hint="Фамилия"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="15,-8,7,3" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+                    </Grid>
+                    <Grid Height="48" Margin="28,147,27,0" VerticalAlignment="Top">
+                        <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+                        <TextBox x:Name="tbWorkerPassword" materialDesign:HintAssist.Hint="Пароль"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="15,-8,7,3" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+                    </Grid>
+                    <Grid Height="48" Margin="28,364,27,0" VerticalAlignment="Top">
+                        <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+                        <TextBox x:Name="tbWorkerYears" materialDesign:HintAssist.Hint="Опыт работы"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="15,-8,7,3" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+                    </Grid>
+                    <Grid Height="48" Margin="28,417,27,0" VerticalAlignment="Top">
+                        <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+                        <TextBox x:Name="tbWorkerContacts" materialDesign:HintAssist.Hint="Контакты"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="15,-8,7,3" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+                    </Grid>
+
+                    <Button Name="btAddWorkers" Click="BtAddWorkers_Click" Content="Добавить" Style="{StaticResource BaseButton}" FontSize="17" Margin="122,498,123,0" VerticalAlignment="Top" Height="35" Background="#FF269A34"/>
+
+                    <ComboBox Name="cbWorkerOffice" DropDownOpened="CbWorkerOffice_DropDownOpened" HorizontalAlignment="Left" Margin="28,310,0,0" VerticalAlignment="Top" Width="351" FontFamily="Palatino Linotype" FontSize="18" Foreground="#FF02A6F2" Background="#FF151414" BorderBrush="#FF02A6F2"/>
+                    <Label Content="Офис" FontSize="16" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Margin="28,276,0,0" VerticalAlignment="Top" />
+                    <ComboBox Name="cbWorkerSpecialization" DropDownOpened="CbWorkerSpecialization_DropDownOpened" HorizontalAlignment="Left" Margin="28,235,0,0" VerticalAlignment="Top" Width="351" FontFamily="Palatino Linotype" FontSize="18" Foreground="#FF02A6F2" Background="#FF151414" BorderBrush="#FF02A6F2"/>
+                    <Label Content="Специальность" FontSize="16" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Margin="28,200,0,0" VerticalAlignment="Top" />
+                
+                </Grid>
+                
+                <Label Content="Удалить" FontSize="16" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="674,123,0,0" VerticalAlignment="Top"/>
+
+                <Label Name="lbProducts" Content="Товары" FontSize="22" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="449,31,0,0" VerticalAlignment="Top"/>
+                <Label Name="lbServices" Content="Услуги" FontSize="22" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="453,31,0,0" VerticalAlignment="Top"/>
+                <Label Name="lbWorkers" Content="Работники" FontSize="22" FontWeight="Bold" Foreground="#FFF4F6F8" FontFamily="Times New Roman" HorizontalAlignment="Left" Margin="434,31,0,0" VerticalAlignment="Top"/>
+                
+                <Grid Name="AddServices" HorizontalAlignment="Left" Height="543" Margin="38,144,0,0" VerticalAlignment="Top" Width="406">
+                    
+                    <Grid Height="48" Margin="28,94,27,0" VerticalAlignment="Top" >
+                        <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+                        <TextBox x:Name="tbServicePrice" materialDesign:HintAssist.Hint="Стоимость"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="15,-8,7,3" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+                    </Grid>
+                    <Grid Height="48" Margin="28,41,27,0" VerticalAlignment="Top">
+                        <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+                        <TextBox x:Name="tbServiceName" materialDesign:HintAssist.Hint="Наименование"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="15,-8,7,3" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+                    </Grid>
+
+                    <Button Name="btAddServices" Click="BtAddServices_Click" Content="Добавить" Style="{StaticResource BaseButton}" FontSize="17" Margin="122,498,123,0" VerticalAlignment="Top" Height="35" Background="#FF269A34"/>
+
+                    <ComboBox Name="сbServiceSpeciality" DropDownOpened="CbServiceSpeciality_DropDownOpened" HorizontalAlignment="Left" Margin="28,235,0,0" VerticalAlignment="Top" Width="351" FontFamily="Palatino Linotype" FontSize="18" Foreground="#FF02A6F2" Background="#FF151414" BorderBrush="#FF02A6F2"/>
+                    <Label Content="Специализация" FontSize="16" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Margin="28,200,0,0" VerticalAlignment="Top" />
+                
+                </Grid>
+                
+                
+                <Grid Name="DeleteServices" HorizontalAlignment="Left" Height="500" Margin="545,187,0,0" VerticalAlignment="Top" Width="324">
+                    <ComboBox Name="cbServiceName" DropDownOpened="CbServiceName_DropDownOpened" HorizontalAlignment="Left" Margin="54,110,0,0" VerticalAlignment="Top" Width="219" FontFamily="Palatino Linotype" FontSize="18" Foreground="#FF02A6F2" Background="#FF151414" BorderBrush="#FF02A6F2"/>
+                    <Label Content="Наименование услуги" FontSize="16" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Margin="54,75,0,0" VerticalAlignment="Top" />
+                    <Button Name="btDeleteServices" Click="BtDeleteServices_Click" Content="Удалить" Style="{StaticResource BaseButton}" FontSize="17" Margin="83,455,79,0" VerticalAlignment="Top" Height="35" Background="#FFA01B2E"/>
+                </Grid>
+                
+                
+                <Grid x:Name="AddProducts"  HorizontalAlignment="Left" Height="543" Margin="38,144,0,0" VerticalAlignment="Top" Width="406">
+                    
+                    <Grid Height="48" Margin="28,94,27,0" VerticalAlignment="Top" >
+                        <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+                        <TextBox x:Name="tbProductCost" materialDesign:HintAssist.Hint="Стоимость товара"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="15,-8,7,3" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+                    </Grid>
+                    <Grid Height="48" Margin="28,41,27,0" VerticalAlignment="Top">
+                        <Border CornerRadius="10" BorderBrush="#FFF4F6F8" BorderThickness="0.5" Background="#FF151414"/>
+                        <TextBox x:Name="tbProductName" materialDesign:HintAssist.Hint="Наименование"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="15,-8,7,3" BorderBrush="#FF02A6F2" Foreground="#FF02A6F2" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+                    </Grid>
+
+                    <Button Name="btAddProducts" Click="BtAddProducts_Click" Content="Добавить" Style="{StaticResource BaseButton}" FontSize="17" Margin="122,498,123,0" VerticalAlignment="Top" Height="35" Background="#FF269A34"/>
+
+                    <ComboBox Name="сbProductPlace" DropDownOpened="СbProductPlace_DropDownOpened" HorizontalAlignment="Left" Margin="28,235,0,0" VerticalAlignment="Top" Width="351" FontFamily="Palatino Linotype" FontSize="18" Foreground="#FF02A6F2" Background="#FF151414" BorderBrush="#FF02A6F2"/>
+                    <Label Content="Склад" FontSize="16" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Margin="28,200,0,0" VerticalAlignment="Top" />
+                
+                </Grid>
+                
+                
+                <Grid x:Name="DeleteProducts" HorizontalAlignment="Left" Height="500" Margin="545,187,0,0" VerticalAlignment="Top" Width="324">
+                    <ComboBox Name="cbProductName" DropDownOpened="CbProductName_DropDownOpened" HorizontalAlignment="Left" Margin="54,110,0,0" VerticalAlignment="Top" Width="219" FontFamily="Palatino Linotype" FontSize="18" Foreground="#FF02A6F2" Background="#FF151414" BorderBrush="#FF02A6F2"/>
+                    <Label Content="Наименование товара" FontSize="16" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" Margin="54,75,0,0" VerticalAlignment="Top" />
+                    <Button Name="btDeleteProducts" Click="BtDeleteProducts_Click" Content="Удалить" Style="{StaticResource BaseButton}" FontSize="17" Margin="83,455,79,0" VerticalAlignment="Top" Height="35" Background="#FFA01B2E"/>
+                </Grid>
+                
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

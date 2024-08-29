@@ -1,0 +1,99 @@
+﻿<Window x:Class="OMG_Soft.ProfileSettings"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OMG_Soft"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:gif="http://wpfanimatedgif.codeplex.com"
+        mc:Ignorable="d" Height="600" Width="900" ResizeMode="NoResize" WindowStartupLocation="CenterScreen" WindowStyle="None" Icon="Resources/Pictures/Emblem/Icon.ico">
+
+    <Grid Style="{DynamicResource MainGridBackground}" Loaded="Grid_Loaded">
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="35"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="900"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Grid Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Height="35" Width="Auto" MouseLeftButtonDown="Grid_MouseLeftButtonDown"  Style="{DynamicResource HeadGridBackground}">
+            <Label Content="OMG-Soft" HorizontalAlignment="Left" Style="{DynamicResource HeadLableStyle}" Margin="5,0,0,1" Width="895"/>
+        </Grid>
+        
+        <Grid Grid.Column="0" Grid.Row="1">
+            <Label Name="ElementsStyle" Margin="1186,675,-678,-134" Style="{DynamicResource DateComboStyle}"/>
+            <Label Name="IconColor" Margin="698,541,0,-0.2" Style="{DynamicResource IconColorStyle}"/>
+            
+            <Grid Height="48" Margin="309,88,309,0" VerticalAlignment="Top" >
+                <Border CornerRadius="10" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}" BorderThickness="0.5" Background="{Binding ElementName=ElementsStyle, Path=Background}"/>
+                <materialDesign:PackIcon Kind="Done" Width="36" Height="38" Foreground="{Binding Foreground, ElementName=IconColor}" Margin="3,10,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="tbChangeSurname" materialDesign:HintAssist.Hint="{DynamicResource m_tbSurname}"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="43,-8,7,3" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}" Foreground="{Binding ElementName=ElementsStyle, Path=Foreground}" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+            </Grid>
+            
+            <Grid Height="48" Margin="309,141,309,0" VerticalAlignment="Top">
+                <Border CornerRadius="10" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}" BorderThickness="0.5" Background="{Binding ElementName=ElementsStyle, Path=Background}"/>
+                <materialDesign:PackIcon Kind="Done" Width="36" Height="38" Foreground="{Binding Foreground, ElementName=IconColor}" Margin="3,8,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="tbChangeName" materialDesign:HintAssist.Hint="{DynamicResource m_tbName}"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="43,-8,7,3" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}" Foreground="{Binding ElementName=ElementsStyle, Path=Foreground}" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+            </Grid>
+            
+            <Grid Height="48" Margin="309,194,309,0" VerticalAlignment="Top">
+                <Border CornerRadius="10" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}" BorderThickness="0.5" Background="{Binding ElementName=ElementsStyle, Path=Background}"/>
+                <materialDesign:PackIcon Kind="User" Width="36" Height="38" Foreground="{Binding Foreground, ElementName=IconColor}" Margin="3,8,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="tbChangeLogin" materialDesign:HintAssist.Hint="{DynamicResource m_tbLogin}"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="43,-8,7,3" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}" Foreground="{Binding ElementName=ElementsStyle, Path=Foreground}" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+            </Grid>
+            
+            <Grid Height="48" Margin="309,242,309,0" VerticalAlignment="Top">
+                <Border CornerRadius="10" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}" BorderThickness="0.5" Background="{Binding ElementName=ElementsStyle, Path=Background}"/>
+                <materialDesign:PackIcon Kind="LockCheck" Width="36" Height="36" Foreground="{Binding Foreground, ElementName=IconColor}" Margin="3,7,0,0" VerticalAlignment="Top"/>
+                <PasswordBox x:Name="tbChangePassword" materialDesign:HintAssist.Hint="{DynamicResource m_tbPassword}"  Style="{StaticResource MaterialDesignFloatingHintPasswordBox}" Margin="43,-8,7,3" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}" Foreground="{Binding ElementName=ElementsStyle, Path=Foreground}" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+            </Grid>
+            
+            <Grid Height="48" Margin="309,295,309,0" VerticalAlignment="Top">
+                <Border CornerRadius="10" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}" BorderThickness="0.5" Background="{Binding ElementName=ElementsStyle, Path=Background}"/>
+                <materialDesign:PackIcon Kind="Payment" Width="36" Height="38" Foreground="{Binding Foreground, ElementName=IconColor}" Margin="3,8,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="tbChangeCartNum" materialDesign:HintAssist.Hint="{DynamicResource m_tbCartNum}"  Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="43,-8,7,3" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}" Foreground="{Binding ElementName=ElementsStyle, Path=Foreground}" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+            </Grid>
+            
+            <Grid Height="106" Margin="309,348,309,0" VerticalAlignment="Top">
+                <Border CornerRadius="10" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}" BorderThickness="0.5" Background="{Binding ElementName=ElementsStyle, Path=Background}"/>
+                <materialDesign:PackIcon Kind="ContactPhone" Width="30" Height="38" Foreground="{Binding Foreground, ElementName=IconColor}" Margin="6,14,0,0" VerticalAlignment="Top"/>
+                <TextBox x:Name="tbChangeUserMail" ToolTip="{DynamicResource m_ToolTip_UserMail}" materialDesign:HintAssist.Hint="{DynamicResource m_tbUserMail}" Style="{StaticResource MaterialDesignFloatingHintTextBox}" Margin="43,-3,7,3" TextWrapping="Wrap" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}" Foreground="{Binding ElementName=ElementsStyle, Path=Foreground}" CaretBrush="#FF8DC3EC" FontFamily="Bookman Old Style" FontSize="22" Background="Transparent" />
+            </Grid>
+
+            <Label Content="{DynamicResource m_lbDataSettings}" Style="{DynamicResource MainLableStyle}" HorizontalAlignment="Left" Margin="352,21,0,0" VerticalAlignment="Top"/>
+            
+            <Image Name="MyPhoto" Source="Resources/Pictures/Users/tg2HRSWEHfM.jpg" HorizontalAlignment="Left" Height="350" Width="280" Margin="15,60,0,0" VerticalAlignment="Top" Stretch="Fill" />
+
+            <Button Content="{DynamicResource m_btChangePhoto}" Style="{DynamicResource BaseButton}" Click="ChangeMyPhoto_Click" FontSize="17" Margin="58,421,656,0" VerticalAlignment="Top" Height="25"/>
+
+            <Button Name="btDeleteUser" Click="BtDeleteUser_Click" Content="{DynamicResource m_btDeleteUser}" Style="{DynamicResource ResourceKey=BaseButton}" FontSize="17" Margin="58,494,656,0" VerticalAlignment="Top" Height="35" Background="#FFAA1D2C"/>
+            <Button Name="btSaveChanges" Click="BtSaveChanges_Click" Content="{DynamicResource m_btSaveChanges}" Style="{DynamicResource BaseButton}" FontSize="17" Margin="656,494,58,0" VerticalAlignment="Top" Height="35"/>
+            <Button Name="btInCabinet" Click="BtInCabinet_Click" Content="{DynamicResource m_btInCabinet}" Style="{DynamicResource BaseButton}" FontSize="17" Margin="691,165,102,0" VerticalAlignment="Top" Height="35"/>
+            
+            <ToggleButton Name="btChooseTheme" Margin="691,318,102,0" VerticalAlignment="Top" Checked="ToggleButton_Checked" Unchecked="BtChooseTheme_Unchecked" Height="35" Background="#FF555757"/>
+            <Label Content="{DynamicResource m_lbThemeSettings}" Style="{DynamicResource MainLableStyle}" HorizontalAlignment="Left" Margin="656,252,0,0" VerticalAlignment="Top" Width="186"/>
+            
+            <Image HorizontalAlignment="Left" Height="115" Margin="600,25,0,0" VerticalAlignment="Top" Width="278" Source="Resources/Pictures/Emblem/Name.png" Stretch="Fill"/>
+
+            <Label Content="{DynamicResource m_lbLight}" Style="{DynamicResource InfoLableStyle}" FontStyle="Italic" HorizontalAlignment="Left" Margin="632,318,0,0" VerticalAlignment="Top"/>
+            <Label Content="{DynamicResource m_lbDark}" Style="{DynamicResource InfoLableStyle}" FontStyle="Italic" HorizontalAlignment="Left" Margin="780,318,0,0" VerticalAlignment="Top"/>
+            <Grid Margin="393,494,393,24.8">
+                <materialDesign:PackIcon Kind="Language" Width="25" Height="25" Foreground="{Binding Foreground, ElementName=IconColor}" Margin="4,10,0,0" VerticalAlignment="Top"/>
+                <ComboBox x:Name="ChooseLanguage" SelectionChanged="ChooseLanguage_SelectionChanged" HorizontalAlignment="Left" Margin="33,8,0,0" VerticalAlignment="Top" Width="77" Height="32" FontFamily="Palatino Linotype" FontSize="18" Foreground="#FF02A6F2" Background="{Binding ElementName=ElementsStyle, Path=Background}" BorderBrush="{Binding ElementName=ElementsStyle, Path=BorderBrush}">
+                    <ComboBoxItem x:Name="CheckRu">
+                        <TextBlock Margin="3,-3,0,0" FontSize="16" Background="{Binding ElementName=ElementsStyle, Path=Background}" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" VerticalAlignment="Top" Width="61"><Run Text="Русский"/></TextBlock>
+                    </ComboBoxItem>
+                    <ComboBoxItem x:Name="CheckEn">
+                        <TextBlock Margin="3,-3,0,0" FontSize="16" Background="{Binding ElementName=ElementsStyle, Path=Background}" Foreground="#FFF4F6F8" FontFamily="Palatino Linotype" FontStyle="Italic" HorizontalAlignment="Left" VerticalAlignment="Top" Width="61"><Run Text="English"/></TextBlock>
+                    </ComboBoxItem>
+                </ComboBox>
+            </Grid>
+            <TextBox Name="ImagePath" HorizontalAlignment="Left" Height="23" Margin="-483,682,0,-140.2" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+
+        </Grid>
+        
+    </Grid>
+</Window>
